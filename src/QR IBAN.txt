@@ -1,0 +1,28 @@
+codeunit 11500 BankMgt
+// W1 CHE 20.5 ! 
+procedure IsQRIBAN(IBAN: Text): Boolean
+    var
+        IntValue: Integer;
+    begin
+        // QR-IBAN must have QR-IID between 30000 and 31999, these are positions 5..10, for example CH97 30024 503254925417.
+        if Evaluate(IntValue, CopyStr(DelChr(IBAN), 5, 5)) then
+            exit((IntValue >= 30000) and (IntValue <= 31999));
+
+        exit(false);
+    end;
+}
+
+procedure IsQRReference(PaymentReference: Text): Boolean
+    var
+        CheckDigit: Text[1];
+    begin
+        // QR Reference must be 27 chars long (26 + 1 check digit) and must contain digits only.
+        PaymentReference := DelChr(PaymentReference);
+        if (StrLen(PaymentReference) = 27) and (DelChr(PaymentReference, '=', '01234567890') = '') then begin
+            CheckDigit := CalcCheckDigit(CopyStr(PaymentReference, 1, 26));
+            exit(CheckDigit = CopyStr(PaymentReference, StrLen(PaymentReference)));
+        end;
+
+        exit(false);
+    end;
+

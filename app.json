@@ -1,0 +1,76 @@
+{
+  "id": "b1061a63-a0b8-4b44-9f39-7fc90181dec8",
+  "name": "che-localization",
+  "publisher": "iSC GmbH",
+  "version": "1.0.0.4",
+  "brief": "localization of CHE",
+  "description": "",
+  "privacyStatement": "https://www.cosmoconsult.com/data-protection",
+  "EULA": "https://cdn.cosmoconsult.com/EULA/COSMO_CONSULT_EULA_en.pdf",
+  "help": "https://docs.cosmoconsult.com",
+  "url": "",
+  "logo": "",
+  "dependencies": [
+    {
+      "id": "98860128-1333-4598-a3da-0590804648b7",
+      "publisher": "Microsoft",
+      "name": "QR-Bill Management for Switzerland",
+      "version": "19.0.0.0"
+    },
+    {
+      "id": "c36c5e13-cd09-4367-a3b8-62b34daa70a0",
+      "name": "Einhell-EH108",
+      "publisher": "iSC GmbH",
+      "version": "19.4.41.0"
+    },
+    {
+      "id": "7ec7d67c-b36d-4d0a-8a2b-873c75c41b2d",
+      "publisher": "iSC GmbH",
+      "name": "Einhell-EH308",
+      "version": "19.0.0.0"
+    },
+    {
+      "id": "9550fabd-46d2-4a34-a960-62e7b45ea835",
+      "publisher": "iSC GmbH",
+      "name": "Einhell-EH001",
+      "version": "1.0.0.0"
+    },
+    {
+      "id": "8b346d20-38e5-4f0e-8e08-c8e983c37fef",
+      "publisher": "iSC GmbH",
+      "name": "Einhell-EH307",
+      "version": "1.0.0.0"
+    },
+    {
+      "id": "3e6a445d-e5c1-4b4b-9585-343fb56d891f",
+      "name": "Einhell-EH301",    
+      "publisher": "iSC GmbH",    
+      "version": "19.1.19.1"
+    },
+    {
+      "id": "fb82e82d-f827-4ff3-87b2-31ef71fb73c5",
+      "name": "Einhell-EH303",
+      "publisher": "iSC GmbH",
+      "version": "1.0.0.0"
+    }
+  ],
+  "screenshots": [],
+  "application": "1.0.0.0",
+  "platform": "1.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50189
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": false,
+    "includeSourceInSymbolFile": true
+  },
+  "features": [
+    "TranslationFile"
+  ],
+  "runtime": "8.1",
+  "target": "Cloud"
+}

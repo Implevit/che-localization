@@ -1,0 +1,41 @@
+{
+    "version":  "0.2.0",
+    "configurations":  [
+                           {
+                               "name":  "Your own server",
+                               "request":  "launch",
+                               "type":  "al",
+                               "environmentType":  "OnPrem",
+                               "server":  "http://bcserver",
+                               "serverInstance":  "BC",
+                               "authentication":  "UserPassword",
+                               "startupObjectId":  22,
+                               "startupObjectType":  "Page",
+                               "breakOnError":  true,
+                               "launchBrowser":  true,
+                               "enableLongRunningSqlStatements":  true,
+                               "enableSqlInformationDebugger":  true,
+                               "tenant":  "default"
+                           },
+                           {
+                               "type":  "al",
+                               "request":  "launch",
+                               "name":  "EIN-BC191-DEV1 (Local Docker)",
+                               "environmentType":  "Sandbox",
+                               "server":  "http://EIN-BC191-DEV1",
+                               "serverInstance":  "BC",
+                               "authentication":  "UserPassword",
+                               "startupObjectType":  "Page",
+                               "startupObjectId":  9005,
+                               "tenant":  "default",
+                               "breakOnError":  true,
+                               "launchBrowser":  true,
+                               "breakOnRecordWrite":  false,
+                               "enableLongRunningSqlStatements":  true,
+                               "enableSqlInformationDebugger":  true,
+                               "longRunningSqlStatementsThreshold":  500,
+                               "numberOfSqlStatements":  10,
+                               "schemaUpdateMode":  "Synchronize"
+                           }
+                       ]
+}
