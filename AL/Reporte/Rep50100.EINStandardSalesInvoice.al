@@ -938,7 +938,6 @@
                     PostedShipmentDate: Date;
                     EANLbl: Label 'EAN: ';
                 begin
-                    //RRRRRRRRRRRRRRRRRRRR
                     //EIN++
 
                     //if (Line.Type = Line.Type::" ") and (Line.Description = '') then
@@ -1453,8 +1452,15 @@
             //O365SalesInvoiceMgmt: Codeunit "O365 Sales Invoice Mgmt";
 #endif
             begin
-                //QQQQQQQQQQQQQQQQQQQQQQQQQQ
-                CurrReport.Language := Language.GetLanguageIdOrDefault("Language Code");
+                //EIN++
+                if Header."Language Code" in ['', 'ENU', 'DES', 'FRS', 'ITS'] then
+                    CurrReport.Language := Language.GetLanguageIdOrDefault("Language Code")
+                else
+                    if Header."Language Code" in ['DEU', 'DEA', 'DEC', 'DEL'] then
+                        CurrReport.Language := Language.GetLanguageIdOrDefault('DES')
+                    else
+                        CurrReport.Language := Language.GetLanguageIdOrDefault('ENU');
+                //EIN--
 
                 if not IsReportInPreviewMode() then
                     CODEUNIT.Run(CODEUNIT::"Sales Inv.-Printed", Header);
@@ -2088,9 +2094,9 @@
 
         FillNameValueTable(LeftHeader, PaymentTermsDescLbl, PaymentTerms.Description);
         FillNameValueTable(LeftHeader, Header.FieldCaption("Due Date"), Format(Header."Due Date", 0, 4));
-        FillNameValueTable(LeftHeader, PaymentMethodDescLbl, PaymentMethod.Description);
+        //FillNameValueTable(LeftHeader, PaymentMethodDescLbl, PaymentMethod.Description);
         //FillNameValueTable(LeftHeader, Header.FieldCaption("Shipping Agent Code"), ShippingAgent.Name);
-        FillNameValueTable(LeftHeader, ShptMethodDescLbl, ShipmentMethod.Description);
+        //FillNameValueTable(LeftHeader, ShptMethodDescLbl, ShipmentMethod.Description);
         FillNameValueTable(LeftHeader, BankNameLbl, CompanyFooter."Bank Name");
         FillNameValueTable(LeftHeader, IBANLbl, CompanyFooter.IBAN);
         FillNameValueTable(LeftHeader, SwiftCodeLbl, CompanyFooter."SWIFT Code");
