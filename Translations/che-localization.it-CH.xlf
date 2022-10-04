@@ -748,6 +748,850 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Invoice - Control LogoPrintOption - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Report 294870391 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales - Shipment</source>
+          <target>Vendite - Spedizione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 1694087509" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Billed to</source>
+          <target>Fatturato a</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType BilledToLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 852687422" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill-to Address</source>
+          <target>Fatturare a - Indirizzo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType BilltoAddressCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 1851005282" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill-to Contact E-Mail</source>
+          <target>Fatturare a - E-mail contatto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType BillToContactEmailLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 2423794985" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill-to Contact Mobile Phone No.</source>
+          <target>Fatturare a - Nr. cellulare contatto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType BillToContactMobilePhoneNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 24137681" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill-to Contact Phone No.</source>
+          <target>Fatturare a - Nr. di telefono contatto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType BillToContactPhoneNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 1908025102" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Thank you for your business. Your shipment is attached to this message.</source>
+          <target>Grazie per l'attività. La spedizione è allegata a questo messaggio.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType BodyLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 2771379227" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sincerely</source>
+          <target>Cordiali saluti</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType ClosingLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 3280613231" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account No.</source>
+          <target>Nr. conto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType CompanyInfoBankAccNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 3338143750" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank</source>
+          <target>Banca</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType CompanyInfoBankNameLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 1810908995" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Giro No.</source>
+          <target>Nr. giro</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType CompanyInfoGiroNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 1970452706" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Phone No.</source>
+          <target>Nr. di telefono</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType CompanyInfoPhoneNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 3701423681" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Copy</source>
+          <target>Copia</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType CopyLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 817831222" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target>Descrizione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType DescriptionCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 1198791402" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Email</source>
+          <target>E-mail</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType EMailLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 901740384" size-unit="char" translate="yes" xml:space="preserve">
+          <source>From</source>
+          <target>Da</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType FromLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 514421613" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hello</source>
+          <target>Salve</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType GreetingLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 2184357828" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit Gross Weight</source>
+          <target>Peso lordo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType GrossWeightLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 1243851074" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Home Page</source>
+          <target>Home page</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType HomePageLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 3184947576" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Job No.</source>
+          <target>Nr. commessa</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType JobNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 194808771" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Job Task Description</source>
+          <target>Descrizione task commessa</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType JobTaskDescLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 1742294907" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Job Task No.</source>
+          <target>Nr. task commessa</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType JobTaskNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 3926274846" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lot No.</source>
+          <target>Nr. Lotto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType LotNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 1339423791" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit Net Weight</source>
+          <target>Peso netto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType NetWeightLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 1292293871" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <target>Nr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType NoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 2491107794" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You must specify one or more filters to avoid accidently printing all documents.</source>
+          <target>È necessario specificare uno o più filtri per evitare la stampa accidentale di tutti i documenti.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType NoFilterSetErr</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 1326846744" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Our Document No.</source>
+          <target>Ns. nr. documento</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType OurDocumentNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 1877187315" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page</source>
+          <target>Pagina</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType PageLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 3763377721" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment Date</source>
+          <target>Data spedizione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType PostedShipmentDateLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 4045418794" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Order No.</source>
+          <target>Nr. ordine acquisto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType PurchaseOrderNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 3259830970" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Qty</source>
+          <target>Qtà</target>
+          <target>Quantità</target>
+          <note from="Developer" annotates="general" priority="2">Short form of Quantity</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType QtyLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 3246368361" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity</source>
+          <target>Quantità</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType QuantityCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 3984626017" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Questions?</source>
+          <target>Domande?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType QuestionsLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 1075159697" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Salesperson</source>
+          <target>Agente</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType SalespersonLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 139936246" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment</source>
+          <target>Spedizione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType SalesShipmentLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 2518404021" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sell-to Contact E-Mail</source>
+          <target>Vendere a - E-mail contatto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType SellToContactEmailLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 689955230" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sell-to Contact Mobile Phone No.</source>
+          <target>Vendere a - Nr. cellulare contatto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType SellToContactMobilePhoneNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 1096796838" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sell-to Contact Phone No.</source>
+          <target>Vendere a - Nr. di telefono contatto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType SellToContactPhoneNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 601422815" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Serial No.</source>
+          <target>Nr. Seriale</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType SerialNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 2531235046" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment</source>
+          <target>Spedizione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType ShipmentLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 3983004501" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment No.</source>
+          <target>Nr. spedizione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType ShipmentNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 2039684796" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ship-to Address</source>
+          <target>Spedire a - Indirizzo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType ShiptoAddrLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 2175793069" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment Method</source>
+          <target>Metodo di spedizione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType ShptMethodDescLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 3014721408" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Subtotal</source>
+          <target>Subtotale</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType SubtotalLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 1291367939" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Thank You!</source>
+          <target>Grazie.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType ThanksLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 2410138484" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total</source>
+          <target>Totale</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType TotalLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 984818344" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit</source>
+          <target>Unità</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType UnitLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 592794411" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Units per Parcel</source>
+          <target>Unità per collo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType UnitsperParcelLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 3689571896" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit Volume</source>
+          <target>Volume unitario</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType UnitVolumeLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - NamedType 1470628605" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Your Shipment</source>
+          <target>Vs. spedizione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - NamedType YourSalesShipmentLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - ReportDataItem 907109761 - Property 1806354803" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Sales Shipment</source>
+          <target>Spedizioni vendita registrate</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - ReportDataItem Header - Property RequestFilterHeading</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <target>Opzioni</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - Control 1885540899 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want the report to include information about components that were used in linked assembly orders that supplied the item(s) being sold. (Only possible for RDLC report layout.)</source>
+          <target>Specifica se si desidera includere nel report le informazioni sui componenti che sono stati utilizzati in ordini di assemblaggio collegati che hanno fornito gli articoli in vendita (solo per layout report RDLC).</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - Control DisplayAsmInformation - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - Control 1885540899 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Assembly Components</source>
+          <target>Mostra componenti di assemblaggio</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - Control DisplayAsmInformation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - Control 819503179 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies that interactions with the contact are logged.</source>
+          <target>Specifica che le interazioni con il contatto vengono registrate.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - Control LogInteractionControl - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - Control 819503179 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Log Interaction</source>
+          <target>Log interazione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - Control LogInteractionControl - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - Control 2737174276 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if the correction lines of an undoing of quantity posting will be shown on the report.</source>
+          <target>Specifica se nel report vengono visualizzate le righe di correzione di un'operazione di annullamento della registrazione della quantità.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - Control Show Correction Lines - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - Control 2737174276 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Correction Lines</source>
+          <target>Mostra righe correzione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - Control Show Correction Lines - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - Control 4192504570 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want to print an appendix to the sales shipment report showing the lot and serial numbers in the shipment.</source>
+          <target>Specifica se si desidera stampare un'appendice per il report di spedizione vendita indicante i numeri di lotto e seriale nella spedizione.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - Control ShowLotSNControl - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 294870391 - Control 4192504570 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Serial/Lot Number Appendix</source>
+          <target>Mostra appendice nr. seriale/lotto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipHORN - Control ShowLotSNControl - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales - Shipment</source>
+          <target>Vendite - Spedizione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 1694087509" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Billed to</source>
+          <target>Fatturato a</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType BilledToLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 852687422" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill-to Address</source>
+          <target>Fatturare a - Indirizzo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType BilltoAddressCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 1851005282" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill-to Contact E-Mail</source>
+          <target>Fatturare a - E-mail contatto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType BillToContactEmailLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 2423794985" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill-to Contact Mobile Phone No.</source>
+          <target>Fatturare a - Nr. cellulare contatto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType BillToContactMobilePhoneNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 24137681" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill-to Contact Phone No.</source>
+          <target>Fatturare a - Nr. di telefono contatto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType BillToContactPhoneNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 141026393" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice to customer no.</source>
+          <target>Fattura al cliente n.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType BilltoCustomerNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 1908025102" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Thank you for your business. Your shipment is attached to this message.</source>
+          <target>Grazie per l'attività. La spedizione è allegata a questo messaggio.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType BodyLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 2771379227" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sincerely</source>
+          <target>Cordiali saluti</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType ClosingLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 3280613231" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account No.</source>
+          <target>Nr. conto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType CompanyInfoBankAccNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 3338143750" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank</source>
+          <target>Banca</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType CompanyInfoBankNameLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 1810908995" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Giro No.</source>
+          <target>Nr. giro</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType CompanyInfoGiroNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 1970452706" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Phone No.</source>
+          <target>Nr. di telefono</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType CompanyInfoPhoneNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 3701423681" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Copy</source>
+          <target>Copia</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType CopyLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 571709666" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cross-Reference No.</source>
+          <target>Nr. cross-reference</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType CrossReferenceNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 1663187473" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Delivery no.</source>
+          <target>Consegna no.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType DeliveryNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 817831222" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target>Descrizione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType DescriptionCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 1198791402" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Email</source>
+          <target>E-mail</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType EMailLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 901740384" size-unit="char" translate="yes" xml:space="preserve">
+          <source>From</source>
+          <target>Da</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType FromLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 514421613" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hello</source>
+          <target>Salve</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType GreetingLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 2184357828" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit Gross Weight</source>
+          <target>Peso lordo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType GrossWeightLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 1243851074" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Home Page</source>
+          <target>Home page</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType HomePageLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 3184947576" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Job No.</source>
+          <target>Nr. commessa</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType JobNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 194808771" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Job Task Description</source>
+          <target>Descrizione task commessa</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType JobTaskDescLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 1742294907" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Job Task No.</source>
+          <target>Nr. task commessa</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType JobTaskNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 3926274846" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lot No.</source>
+          <target>Nr. Lotto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType LotNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 1339423791" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit Net Weight</source>
+          <target>Peso netto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType NetWeightLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 1292293871" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <target>Nr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType NoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 2491107794" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You must specify one or more filters to avoid accidently printing all documents.</source>
+          <target>È necessario specificare uno o più filtri per evitare la stampa accidentale di tutti i documenti.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType NoFilterSetErr</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 1326846744" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Our Document No.</source>
+          <target>Ns. nr. documento</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType OurDocumentNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 1877187315" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page</source>
+          <target>Pagina</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType PageLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 3108437981" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Delivery Date</source>
+          <target>Data di consegna</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType PostedDeliveryDateLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 3763377721" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment Date</source>
+          <target>Data spedizione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType PostedShipmentDateLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 4045418794" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Order No.</source>
+          <target>Nr. ordine acquisto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType PurchaseOrderNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 3259830970" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Qty</source>
+          <target>Qtà</target>
+          <target>Quantità</target>
+          <note from="Developer" annotates="general" priority="2">Short form of Quantity</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType QtyLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 3246368361" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity</source>
+          <target>Quantità</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType QuantityCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 1120375275" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ordered Quantity</source>
+          <target>Quantità</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType Quantitylbl_SL</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 3984626017" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Questions?</source>
+          <target>Domande?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType QuestionsLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 1075159697" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Salesperson</source>
+          <target>Agente</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType SalespersonLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 139936246" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment</source>
+          <target>Spedizione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType SalesShipmentLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 2518404021" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sell-to Contact E-Mail</source>
+          <target>Vendere a - E-mail contatto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType SellToContactEmailLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 689955230" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sell-to Contact Mobile Phone No.</source>
+          <target>Vendere a - Nr. cellulare contatto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType SellToContactMobilePhoneNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 1096796838" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sell-to Contact Phone No.</source>
+          <target>Vendere a - Nr. di telefono contatto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType SellToContactPhoneNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 1422524654" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice to customer no.</source>
+          <target>Fattura al cliente n.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType SelltoCustomerNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 601422815" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Serial No.</source>
+          <target>Nr. Seriale</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType SerialNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 2531235046" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment</source>
+          <target>Spedizione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType ShipmentLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 3983004501" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment No.</source>
+          <target>Nr. spedizione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType ShipmentNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 2039684796" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ship-to Address</source>
+          <target>Spedire a - Indirizzo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType ShiptoAddrLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 2175793069" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment Method</source>
+          <target>Metodo di spedizione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType ShptMethodDescLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 3014721408" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Subtotal</source>
+          <target>Subtotale</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType SubtotalLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 1378079743" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tariff No.: </source>
+          <target>Numero di tariffa doganale: </target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType TariffNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 2476940767" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Salesperson</source>
+          <target>Agente</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType Text000</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
+          <source>COPY</source>
+          <target>COPIA</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 3752334001" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment %1</source>
+          <target>Spedizioni %1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType Text002</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 95063322" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page %1</source>
+          <target>Pagina %1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType Text003</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 2036383710" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Official in Charge:</source>
+          <target>Funzionario responsabile:</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType Text76701</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 123293859" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipping Agent:</source>
+          <target>Speditore</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType Text76702</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 760990476" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ref:</source>
+          <target>Nr. Referenza</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType Text76703</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 1291367939" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Thank You!</source>
+          <target>Grazie.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType ThanksLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 2410138484" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total</source>
+          <target>Totale</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType TotalLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 984818344" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit</source>
+          <target>Unità</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType UnitLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 592794411" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Units per Parcel</source>
+          <target>Unità per collo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType UnitsperParcelLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 3689571896" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit Volume</source>
+          <target>Volume unitario</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType UnitVolumeLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 1470299018" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Registration No.</source>
+          <target>Partita IVA</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType VATRegistrationNo_lbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 3875894122" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Your order number</source>
+          <target>Numero d'ordine</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType YourOrderNumberLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 1470628605" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Your Shipment</source>
+          <target>Vs. spedizione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType YourSalesShipmentLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - ReportDataItem 907109761 - Property 1806354803" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Sales Shipment</source>
+          <target>Spedizioni vendita registrate</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - ReportDataItem Header - Property RequestFilterHeading</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - ReportDataItem 1735507514 - Method 3245603402 - NamedType 19795414" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1%</source>
+          <target>%1%</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - ReportDataItem Line - Method OnAfterGetRecord - NamedType LineDiscountPctText_Mesg</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - ReportDataItem 1735507514 - Method 3245603402 - NamedType 2739152996" size-unit="char" translate="yes" xml:space="preserve">
+          <source>EAN: </source>
+          <target>EAN: </target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - ReportDataItem Line - Method OnAfterGetRecord - NamedType EANLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <target>Opzioni</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - Control 1885540899 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want the report to include information about components that were used in linked assembly orders that supplied the item(s) being sold. (Only possible for RDLC report layout.)</source>
+          <target>Specifica se si desidera includere nel report le informazioni sui componenti che sono stati utilizzati in ordini di assemblaggio collegati che hanno fornito gli articoli in vendita (solo per layout report RDLC).</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - Control DisplayAsmInformation - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - Control 1885540899 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Assembly Components</source>
+          <target>Mostra componenti di assemblaggio</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - Control DisplayAsmInformation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - Control 1115309124 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Filter Location code</source>
+          <target>Filter Location code</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - Control LocationCodeFilter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - Control 819503179 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies that interactions with the contact are logged.</source>
+          <target>Specifica che le interazioni con il contatto vengono registrate.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - Control LogInteractionControl - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - Control 819503179 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Log Interaction</source>
+          <target>Log interazione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - Control LogInteractionControl - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - Control 331631019 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Logo Print</source>
+          <target>Stampa del logo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Suggested translation inserted.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - Control LogoPrintOption - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - Control 2737174276 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if the correction lines of an undoing of quantity posting will be shown on the report.</source>
+          <target>Specifica se nel report vengono visualizzate le righe di correzione di un'operazione di annullamento della registrazione della quantità.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - Control Show Correction Lines - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - Control 2737174276 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Correction Lines</source>
+          <target>Mostra righe correzione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - Control Show Correction Lines - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - Control 4192504570 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want to print an appendix to the sales shipment report showing the lot and serial numbers in the shipment.</source>
+          <target>Specifica se si desidera stampare un'appendice per il report di spedizione vendita indicante i numeri di lotto e seriale nella spedizione.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - Control ShowLotSNControl - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - Control 4192504570 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Serial/Lot Number Appendix</source>
+          <target>Mostra appendice nr. seriale/lotto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - Control ShowLotSNControl - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Report 192519712 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Sales - Shipment</source>
           <target>Vendite - Spedizione</target>
@@ -1108,6 +1952,367 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipment - Control ShowLotSNControl - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Report 3143090148 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales - Shipment</source>
+          <target>Vendite - Spedizione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 1694087509" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Billed to</source>
+          <target>Fatturato a</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType BilledToLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 852687422" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill-to Address</source>
+          <target>Fatturare a - Indirizzo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType BilltoAddressCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 1851005282" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill-to Contact E-Mail</source>
+          <target>Fatturare a - E-mail contatto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType BillToContactEmailLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 2423794985" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill-to Contact Mobile Phone No.</source>
+          <target>Fatturare a - Nr. cellulare contatto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType BillToContactMobilePhoneNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 24137681" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill-to Contact Phone No.</source>
+          <target>Fatturare a - Nr. di telefono contatto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType BillToContactPhoneNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 1908025102" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Thank you for your business. Your shipment is attached to this message.</source>
+          <target>Grazie per l'attività. La spedizione è allegata a questo messaggio.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType BodyLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 2771379227" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sincerely</source>
+          <target>Cordiali saluti</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType ClosingLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 3280613231" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account No.</source>
+          <target>Nr. conto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType CompanyInfoBankAccNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 3338143750" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank</source>
+          <target>Banca</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType CompanyInfoBankNameLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 1810908995" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Giro No.</source>
+          <target>Nr. giro</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType CompanyInfoGiroNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 1970452706" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Phone No.</source>
+          <target>Nr. di telefono</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType CompanyInfoPhoneNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 3701423681" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Copy</source>
+          <target>Copia</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType CopyLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 817831222" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target>Descrizione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType DescriptionCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 1198791402" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Email</source>
+          <target>E-mail</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType EMailLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 901740384" size-unit="char" translate="yes" xml:space="preserve">
+          <source>From</source>
+          <target>Da</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType FromLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 514421613" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hello</source>
+          <target>Salve</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType GreetingLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 2184357828" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit Gross Weight</source>
+          <target>Peso lordo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType GrossWeightLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 1243851074" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Home Page</source>
+          <target>Home page</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType HomePageLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 3184947576" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Job No.</source>
+          <target>Nr. commessa</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType JobNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 194808771" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Job Task Description</source>
+          <target>Descrizione task commessa</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType JobTaskDescLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 1742294907" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Job Task No.</source>
+          <target>Nr. task commessa</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType JobTaskNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 3926274846" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lot No.</source>
+          <target>Nr. Lotto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType LotNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 1339423791" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit Net Weight</source>
+          <target>Peso netto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType NetWeightLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 1292293871" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <target>Nr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType NoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 2491107794" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You must specify one or more filters to avoid accidently printing all documents.</source>
+          <target>È necessario specificare uno o più filtri per evitare la stampa accidentale di tutti i documenti.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType NoFilterSetErr</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 1326846744" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Our Document No.</source>
+          <target>Ns. nr. documento</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType OurDocumentNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 1877187315" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page</source>
+          <target>Pagina</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType PageLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 3763377721" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment Date</source>
+          <target>Data spedizione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType PostedShipmentDateLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 4045418794" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Order No.</source>
+          <target>Nr. ordine acquisto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType PurchaseOrderNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 3259830970" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Qty</source>
+          <target>Qtà</target>
+          <target>Quantità</target>
+          <note from="Developer" annotates="general" priority="2">Short form of Quantity</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType QtyLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 3246368361" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity</source>
+          <target>Quantità</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType QuantityCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 3984626017" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Questions?</source>
+          <target>Domande?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType QuestionsLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 1075159697" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Salesperson</source>
+          <target>Agente</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType SalespersonLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 139936246" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment</source>
+          <target>Spedizione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType SalesShipmentLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 2518404021" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sell-to Contact E-Mail</source>
+          <target>Vendere a - E-mail contatto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType SellToContactEmailLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 689955230" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sell-to Contact Mobile Phone No.</source>
+          <target>Vendere a - Nr. cellulare contatto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType SellToContactMobilePhoneNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 1096796838" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sell-to Contact Phone No.</source>
+          <target>Vendere a - Nr. di telefono contatto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType SellToContactPhoneNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 601422815" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Serial No.</source>
+          <target>Nr. Seriale</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType SerialNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 2531235046" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment</source>
+          <target>Spedizione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType ShipmentLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 3983004501" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment No.</source>
+          <target>Nr. spedizione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType ShipmentNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 2039684796" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ship-to Address</source>
+          <target>Spedire a - Indirizzo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType ShiptoAddrLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 2175793069" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment Method</source>
+          <target>Metodo di spedizione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType ShptMethodDescLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 3014721408" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Subtotal</source>
+          <target>Subtotale</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType SubtotalLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 1291367939" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Thank You!</source>
+          <target>Grazie.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType ThanksLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 2410138484" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total</source>
+          <target>Totale</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType TotalLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 984818344" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit</source>
+          <target>Unità</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType UnitLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 592794411" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Units per Parcel</source>
+          <target>Unità per collo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType UnitsperParcelLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 3689571896" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit Volume</source>
+          <target>Volume unitario</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType UnitVolumeLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - NamedType 1470628605" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Your Shipment</source>
+          <target>Vs. spedizione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - NamedType YourSalesShipmentLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - ReportDataItem 907109761 - Property 1806354803" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Sales Shipment</source>
+          <target>Spedizioni vendita registrate</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - ReportDataItem Header - Property RequestFilterHeading</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <target>Opzioni</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - Control 1885540899 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want the report to include information about components that were used in linked assembly orders that supplied the item(s) being sold. (Only possible for RDLC report layout.)</source>
+          <target>Specifica se si desidera includere nel report le informazioni sui componenti che sono stati utilizzati in ordini di assemblaggio collegati che hanno fornito gli articoli in vendita (solo per layout report RDLC).</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - Control DisplayAsmInformation - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - Control 1885540899 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Assembly Components</source>
+          <target>Mostra componenti di assemblaggio</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - Control DisplayAsmInformation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - Control 819503179 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies that interactions with the contact are logged.</source>
+          <target>Specifica che le interazioni con il contatto vengono registrate.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - Control LogInteractionControl - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - Control 819503179 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Log Interaction</source>
+          <target>Log interazione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - Control LogInteractionControl - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - Control 2737174276 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if the correction lines of an undoing of quantity posting will be shown on the report.</source>
+          <target>Specifica se nel report vengono visualizzate le righe di correzione di un'operazione di annullamento della registrazione della quantità.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - Control Show Correction Lines - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - Control 2737174276 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Correction Lines</source>
+          <target>Mostra righe correzione</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - Control Show Correction Lines - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - Control 4192504570 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want to print an appendix to the sales shipment report showing the lot and serial numbers in the shipment.</source>
+          <target>Specifica se si desidera stampare un'appendice per il report di spedizione vendita indicante i numeri di lotto e seriale nella spedizione.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - Control ShowLotSNControl - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3143090148 - Control 4192504570 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Serial/Lot Number Appendix</source>
+          <target>Mostra appendice nr. seriale/lotto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - ShipMIGRO - Control ShowLotSNControl - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Report 2739570661 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Sales - Credit Memo</source>
           <target>Vendite - Nota di credito</target>
@@ -1359,7 +2564,6 @@
           <source>Return No.</source>
           <target>Ritorno no.</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales-Credit Memo - NamedType ReturnNoLbl</note>
         </trans-unit>
         <trans-unit id="Report 2739570661 - NamedType 730897359" size-unit="char" translate="yes" xml:space="preserve">
