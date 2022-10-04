@@ -1,6 +1,6 @@
 report 50105 "EIN Standard Sales - Shipm501"
 {
-    RDLCLayout = './src/ReportLayout/Rep50105.EINStandardSalesShipment.rdlc';
+    RDLCLayout = './src/ReportLayout/Rep50105.EINStandardSalesShipment501.rdlc';
     //WordLayout = './src/ReportLayout/Rep50101.EINStandardSalesShipment.docx';
     Caption = 'Sales - Shipment';
     DefaultLayout = RDLC;
@@ -45,7 +45,7 @@ report 50105 "EIN Standard Sales - Shipm501"
             column(CompanyEMail; CompanyInfo."E-Mail")
             {
             }
-            column(CompanyPicture; DummyCompanyInfo.Picture)
+            column(CompanyPicture; CompanyInfo.Picture)
             {
             }
             column(CompanyPhoneNo; CompanyInfo."Phone No.")
@@ -386,6 +386,9 @@ report 50105 "EIN Standard Sales - Shipm501"
             column(LocationCodeFilter; LocationCodeFilter)
             {
             }
+            column(LogoPrint; LogoPrint)
+            {
+            }
 
 
             //EIN--
@@ -606,8 +609,8 @@ report 50105 "EIN Standard Sales - Shipm501"
 
                     OnBeforeLineOnAfterGetRecord(Header, Line);
                     //EIN++
-                    LocationCodeFilter := '501';
-                    LocationCodeFilter := 'BLAU'; // DEd zum debuggen aufm cronos
+                    //LocationCodeFilter := '501';
+                    //LocationCodeFilter := 'BLAU'; // DEd zum debuggen aufm cronos
                     ShowSalesShipmentLine := (Line.Quantity > 0) AND (Line.Type = Line.Type::Item);
                     TariffNo := '';
                     if (Type = Type::Item) then
@@ -637,12 +640,12 @@ report 50105 "EIN Standard Sales - Shipm501"
                             CustItemNo := ItemReference."Reference No.";
                     end;
 
+
+
+                    //if FirstLineHasBeenOutput then
+                    //    Clear(DummyCompanyInfo.Picture);
+                    //FirstLineHasBeenOutput := true;
                     //EIN--                    
-
-                    if FirstLineHasBeenOutput then
-                        Clear(DummyCompanyInfo.Picture);
-                    FirstLineHasBeenOutput := true;
-
                     if ("Job No." <> '') and (not EnvironmentInfo.IsSaaS()) then
                         JobNo := ''
                     else
@@ -861,7 +864,7 @@ report 50105 "EIN Standard Sales - Shipm501"
                 if SellToContact.Get("Sell-to Contact No.") then;
                 if BillToContact.Get("Bill-to Contact No.") then;
 
-                FillLeftHeader();
+                //FillLeftHeader(); EIN
                 FillRightHeader();
 
                 if not Cust.Get("Bill-to Customer No.") then
@@ -891,12 +894,19 @@ report 50105 "EIN Standard Sales - Shipm501"
                 group(Options)
                 {
                     Caption = 'Options';
+
                     field(LogInteractionControl; LogInteraction)
                     {
                         ApplicationArea = Basic, Suite;
                         Caption = 'Log Interaction';
                         Enabled = LogInteractionEnable;
                         ToolTip = 'Specifies that interactions with the contact are logged.';
+                    }
+
+                    field(LogoPrintOption; LogoPrint)
+                    {
+                        ApplicationArea = Basic, Suite;
+                        Caption = 'Logo Print';
                     }
                     field(DisplayAsmInformation; DisplayAssemblyInformation)
                     {
@@ -916,6 +926,14 @@ report 50105 "EIN Standard Sales - Shipm501"
                         Caption = 'Show Serial/Lot Number Appendix';
                         ToolTip = 'Specifies if you want to print an appendix to the sales shipment report showing the lot and serial numbers in the shipment.';
                     }
+
+                    field(LocationCodeFilter; LocationCodeFilter)
+                    {
+                        ApplicationArea = Basic, Suite;
+                        Caption = 'Filter Location code';
+                    }
+
+
                 }
             }
         }
@@ -927,12 +945,14 @@ report 50105 "EIN Standard Sales - Shipm501"
         trigger OnInit()
         begin
             LogInteractionEnable := true;
+            LocationCodeFilter := '501';
         end;
 
         trigger OnOpenPage()
         begin
             InitLogInteraction();
             LogInteractionEnable := LogInteraction;
+            LocationCodeFilter := LocationCodeFilter;
         end;
     }
 
@@ -1027,8 +1047,9 @@ report 50105 "EIN Standard Sales - Shipm501"
         Unitpricelbl_SL: Text;//EIN
         Discountlbl_SL: Text;//EIN
         Amountlbl_SL: Text;//EIN
+        LogoPrint: Boolean;//EIN        
 
-        LocationCodeFilter: Code[20];
+        LocationCodeFilter: Code[20]; //EIN
         CompanyLogoPosition: Integer;
         TrackingSpecCount: Integer;
         FirstLineHasBeenOutput: Boolean;
@@ -1116,7 +1137,8 @@ report 50105 "EIN Standard Sales - Shipm501"
         OnBeforeGetDocumentCaption(Header, DocCaption);
         if DocCaption <> '' then
             exit(DocCaption);
-        exit(SalesShipmentLbl);
+        //exit(SalesShipmentLbl);
+        exit(SalesShipmentLbl + ' ' + Header."No.");//EIN
     end;
 
     procedure InitializeRequest(NewLogInteraction: Boolean; DisplayAsmInfo: Boolean; NewShowCorrectionLines: Boolean; NewShowLotSN: Boolean)
@@ -1262,7 +1284,7 @@ report 50105 "EIN Standard Sales - Shipm501"
 
     local procedure FormatDocumentFields(SalesShipmentHeader: Record "Sales Shipment Header")
     begin
-        FormatDocument.SetSalesPerson(SalespersonPurchaser, SalesShipmentHeader."Salesperson Code", SalesPersonText);
+        //FormatDocument.SetSalesPerson(SalespersonPurchaser, SalesShipmentHeader."Salesperson Code", SalesPersonText); EIN
         FormatDocument.SetShipmentMethod(ShipmentMethod, SalesShipmentHeader."Shipment Method Code", SalesShipmentHeader."Language Code");
     end;
 

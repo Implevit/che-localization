@@ -1283,6 +1283,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - Control DisplayAsmInformation - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Report 3234294113 - Control 1115309124 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Filter Location code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - Control LocationCodeFilter - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Report 3234294113 - Control 819503179 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies that interactions with the contact are logged.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1292,6 +1297,11 @@
           <source>Log Interaction</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - Control LogInteractionControl - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - Control 331631019 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Logo Print</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - Control LogoPrintOption - Property Caption</note>
         </trans-unit>
         <trans-unit id="Report 3234294113 - Control 2737174276 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies if the correction lines of an undoing of quantity posting will be shown on the report.</source>
