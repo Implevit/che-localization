@@ -721,7 +721,6 @@ report 50102 "EIN Standard Sales-Credit Memo"
                     Substr01Lbl: Label'%1%';
                     EANLbl: Label 'EAN: ';
                 begin
-                    //RRRRRRRRRRRRRRRRRRRR
                     //EIN++
                     if (Type = Type::"G/L Account") and ("No." = '3297') then
                         HideRoundingLine := TRUE
@@ -1148,7 +1147,16 @@ report 50102 "EIN Standard Sales-Credit Memo"
 
                 CalcFields("Work Description");
                 ShowWorkDescription := "Work Description".HasValue;
-                CurrReport.Language := Language.GetLanguageIdOrDefault("Language Code");
+
+                //EIN++
+                if Header."Language Code" in ['', 'ENU', 'DES', 'FRS', 'ITS'] then
+                    CurrReport.Language := Language.GetLanguageIdOrDefault("Language Code")
+                else
+                    if Header."Language Code" in ['DEU', 'DEA', 'DEC', 'DEL'] then
+                        CurrReport.Language := Language.GetLanguageIdOrDefault('DES')
+                    else
+                        CurrReport.Language := Language.GetLanguageIdOrDefault('ENU');
+                //EIN--
 
                 FormatAddressFields(Header);
                 FormatDocumentFields(Header);

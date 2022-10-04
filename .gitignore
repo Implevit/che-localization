@@ -1,2 +1,5 @@
-.alpackages
+.alcache/
+.alpackages/
+.vscode/
+.vs/
 *.app
