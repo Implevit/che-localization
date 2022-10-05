@@ -1033,6 +1033,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType HomePageLbl</note>
         </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 3451087388" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType ItemNo_Line_lbl</note>
+        </trans-unit>
         <trans-unit id="Report 3234294113 - NamedType 3184947576" size-unit="char" translate="yes" xml:space="preserve">
           <source>Job No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1277,11 +1282,6 @@
           <source>Show Assembly Components</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - Control DisplayAsmInformation - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 3234294113 - Control 1115309124 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Filter Location code</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - Control LocationCodeFilter - Property Caption</note>
         </trans-unit>
         <trans-unit id="Report 3234294113 - Control 819503179 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies that interactions with the contact are logged.</source>

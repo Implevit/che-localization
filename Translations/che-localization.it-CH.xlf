@@ -1247,6 +1247,13 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType HomePageLbl</note>
         </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 3451087388" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item No.</source>          
+          <target>Articolo</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Suggested translation inserted.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType ItemNo_Line_lbl</note>
+        </trans-unit>
         <trans-unit id="Report 3234294113 - NamedType 3184947576" size-unit="char" translate="yes" xml:space="preserve">
           <source>Job No.</source>
           <target>Nr. commessa</target>
@@ -1517,6 +1524,12 @@
           <target>Spedizioni vendita registrate</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - ReportDataItem Header - Property RequestFilterHeading</note>
+        </trans-unit>
+        <trans-unit id="Report 3234294113 - ReportDataItem 1735507514 - Method 3245603402 - NamedType 19795414" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1%</source>
+          <target>%1%</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - ReportDataItem Line - Method OnAfterGetRecord - NamedType LineDiscountPctText_Mesg</note>
         </trans-unit>
         <trans-unit id="Report 3234294113 - ReportDataItem 1735507514 - Method 3245603402 - NamedType 2739152996" size-unit="char" translate="yes" xml:space="preserve">
           <source>EAN: </source>
