@@ -409,7 +409,7 @@ report 50105 "EIN Standard Sales - Shipm501"
                 column(ItemNo_Line; "No.")
                 {
                 }
-                column(ItemNo_Line_Lbl; FieldCaption("No."))
+                column(ItemNo_Line_Lbl; ItemNo_Line_lbl)
                 {
                 }
                 column(ItemReferenceNo_Line; "Item Reference No.")
@@ -545,6 +545,12 @@ report 50105 "EIN Standard Sales - Shipm501"
                 column(LocationCode_Line; Line."Location Code")
                 {
                 }
+
+                column(BinCode_Line; Line."Bin Code")
+                {
+
+                }
+
                 column(LocationCode_Line_lbl; Line.fieldcaption("Location Code"))
                 {
                 }
@@ -864,7 +870,7 @@ report 50105 "EIN Standard Sales - Shipm501"
                 if SellToContact.Get("Sell-to Contact No.") then;
                 if BillToContact.Get("Bill-to Contact No.") then;
 
-                //FillLeftHeader(); EIN
+                FillLeftHeader();
                 FillRightHeader();
 
                 if not Cust.Get("Bill-to Customer No.") then
@@ -927,11 +933,14 @@ report 50105 "EIN Standard Sales - Shipm501"
                         ToolTip = 'Specifies if you want to print an appendix to the sales shipment report showing the lot and serial numbers in the shipment.';
                     }
 
+                    /*
+
                     field(LocationCodeFilter; LocationCodeFilter)
                     {
                         ApplicationArea = Basic, Suite;
                         Caption = 'Filter Location code';
                     }
+                    */
 
 
                 }
@@ -1122,6 +1131,8 @@ report 50105 "EIN Standard Sales - Shipm501"
         CrossReferenceNoLbl: Label 'Cross-Reference No.'; //ENU=;DES=Referenznr.;ITS=Nr. Referenza;FRS=Référence N°
         Quantitylbl_SL: label 'Ordered Quantity'; //DEU=Bestell-\menge;ENU=Ordered Quantity;DES=Bestell-\menge;ITS=Quantità;FRS=Quantité commandé
 
+        ItemNo_Line_lbl: label 'Item No.'; //DEU=Artikelnr.;ENU=Item No.;ITS=Articolo;FRS=Article
+
     protected var
         TempTrackingSpecBuffer: Record "Tracking Specification" temporary;
 
@@ -1217,12 +1228,26 @@ report 50105 "EIN Standard Sales - Shipm501"
     begin
         LeftHeader.DeleteAll();
 
+
+        FillNameValueTable(LeftHeader, ' ', ' ');
+        FillNameValueTable(LeftHeader, ' ', ' ');
+        FillNameValueTable(LeftHeader, ' ', ' ');
+        FillNameValueTable(LeftHeader, Text76703, ' ');
+        if SalesPersonText <> '' then
+            FillNameValueTable(LeftHeader, SalespersonLbl, SalesPersonText)
+        else
+            FillNameValueTable(LeftHeader, ' ', ' ');
+
+        if ShippingAgent.Name <> '' then
+            FillNameValueTable(LeftHeader, Text76702, ShippingAgent.Name);
+        /*
         FillNameValueTable(LeftHeader, Header.FieldCaption("Sell-to Customer No."), Header."Sell-to Customer No.");
         FillNameValueTable(LeftHeader, Header.FieldCaption("Document Date"), Format(Header."Document Date"));
         FillNameValueTable(LeftHeader, ShipmentNoLbl, Header."No.");
         FillNameValueTable(LeftHeader, Header.FieldCaption("Shipment Date"), Format(Header."Shipment Date"));
         FillNameValueTable(LeftHeader, PurchaseOrderNoLbl, Header."External Document No.");
         FillNameValueTable(LeftHeader, OurDocumentNoLbl, Header."Order No.");
+        */
     end;
 
     local procedure FillRightHeader()
@@ -1280,11 +1305,20 @@ report 50105 "EIN Standard Sales - Shipm501"
         FormatAddr.SalesShptBillTo(CustAddr, ShipToAddr, SalesShipmentHeader);
         FormatAddr.SalesShptShipTo(ShipToAddr, SalesShipmentHeader);
         ShowCustAddr := FormatAddr.SalesShptBillTo(CustAddr, ShipToAddr, SalesShipmentHeader);
+
+        //EIN++
+        Clear(CompanyAddr);
+        //EIN--
     end;
 
     local procedure FormatDocumentFields(SalesShipmentHeader: Record "Sales Shipment Header")
     begin
         //FormatDocument.SetSalesPerson(SalespersonPurchaser, SalesShipmentHeader."Salesperson Code", SalesPersonText); EIN
+        clear(SalesPersonText);
+        if SalesShipmentHeader."Salesperson Code" <> '' then
+            if SalespersonPurchaser.get(SalesShipmentHeader."Salesperson Code") then
+                SalesPersonText := SalespersonPurchaser.Name;
+
         FormatDocument.SetShipmentMethod(ShipmentMethod, SalesShipmentHeader."Shipment Method Code", SalesShipmentHeader."Language Code");
     end;
 
