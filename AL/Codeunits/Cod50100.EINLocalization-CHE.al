@@ -1,4 +1,4 @@
-codeunit 50100 "Localization-CHE_EHC"
+codeunit 50100 "EIN Localization-CHE_EHC"
 {
 
     [EventSubscriber(ObjectType::Table, Database::"Vendor Bank Account", 'OnAfterValidateEvent', 'IBAN', false, false)]

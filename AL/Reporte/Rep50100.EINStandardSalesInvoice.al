@@ -2189,12 +2189,12 @@
         FormatDocument.SetShipmentMethod(ShipmentMethod, SalesInvoiceHeader."Shipment Method Code", SalesInvoiceHeader."Language Code");
     end;
 
-    local procedure GetJobTaskDescription(JobNo: Code[20]; JobTaskNo: Code[20]): Text[100]
+    local procedure GetJobTaskDescription(_JobNo: Code[20]; _JobTaskNo: Code[20]): Text[100]
     var
         JobTask: Record "Job Task";
     begin
-        JobTask.SetRange("Job No.", JobNo);
-        JobTask.SetRange("Job Task No.", JobTaskNo);
+        JobTask.SetRange("Job No.", _JobNo);
+        JobTask.SetRange("Job Task No.", _JobTaskNo);
         if JobTask.FindFirst() then
             exit(JobTask.Description);
 

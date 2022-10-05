@@ -3,41 +3,47 @@
   <file datatype="xml" source-language="en-US" target-language="fr-CH" original="che-localization.g.xlf">
     <body>
       <group id="body">
-        <trans-unit id="Codeunit 826933979 - Method 3038106376 - NamedType 2868789283" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 470048549 - Method 3038106376 - NamedType 2868789283" size-unit="char" translate="yes" xml:space="preserve">
           <source>"Payment Form" must not be %1 for a Domestic Payment in Vendor Bank Account Vendor No. %2, Code %3</source>
           <target>Payment Form" ne doit pas être %1 pour un paiement national sur le compte bancaire du vendeur n° %2, code %3.</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Localization-CHE_EHC - Method PaymentFunctCHE_OnGenJnlLineCheck - NamedType PaymentFormErr</note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Suggested translation inserted.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIN Localization-CHE_EHC - Method PaymentFunctCHE_OnGenJnlLineCheck - NamedType PaymentFormErr</note>
         </trans-unit>
-        <trans-unit id="Codeunit 826933979 - Method 3038106376 - NamedType 1381337541" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 470048549 - Method 3038106376 - NamedType 1381337541" size-unit="char" translate="yes" xml:space="preserve">
           <source>Fields Applies-to Doc. Type and Applies-to Doc. No. must refer to a valid Vendor Ledger Entry</source>
           <target>Les champs Applies-to Doc. Type et Applies-to Doc. doivent faire référence à une entrée valide dans le grand livre des fournisseurs.</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Localization-CHE_EHC - Method PaymentFunctCHE_OnGenJnlLineCheck - NamedType ESRPaymentErr</note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Suggested translation inserted.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIN Localization-CHE_EHC - Method PaymentFunctCHE_OnGenJnlLineCheck - NamedType ESRPaymentErr</note>
         </trans-unit>
-        <trans-unit id="Codeunit 826933979 - Method 3038106376 - NamedType 3546020941" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 470048549 - Method 3038106376 - NamedType 3546020941" size-unit="char" translate="yes" xml:space="preserve">
           <source>Payment Reference must contain a value of 27 digits in Vendor Ledger Entry %1</source>
           <target>La référence de paiement doit contenir une valeur de 27 chiffres dans l'entrée %1 du grand livre des fournisseurs.</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Localization-CHE_EHC - Method PaymentFunctCHE_OnGenJnlLineCheck - NamedType RefferenceNo2Err</note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Suggested translation inserted.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIN Localization-CHE_EHC - Method PaymentFunctCHE_OnGenJnlLineCheck - NamedType RefferenceNo2Err</note>
         </trans-unit>
-        <trans-unit id="Codeunit 826933979 - Method 3038106376 - NamedType 2662334657" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 470048549 - Method 3038106376 - NamedType 2662334657" size-unit="char" translate="yes" xml:space="preserve">
           <source>IBAN/QR-IBAN must be provided for Vendor Bank Account Vendor No. %1, Code %2</source>
           <target>IBAN/QR-IBAN doit être fourni pour le compte bancaire du vendeur Vendor No. %1, Code %2</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Localization-CHE_EHC - Method PaymentFunctCHE_OnGenJnlLineCheck - NamedType IBANBankAccNoErr</note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Suggested translation inserted.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIN Localization-CHE_EHC - Method PaymentFunctCHE_OnGenJnlLineCheck - NamedType IBANBankAccNoErr</note>
         </trans-unit>
-        <trans-unit id="Codeunit 826933979 - Method 1411110286 - NamedType 3546020941" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 470048549 - Method 1411110286 - NamedType 3546020941" size-unit="char" translate="yes" xml:space="preserve">
           <source>Payment Reference must contain a value of 27 digits</source>
           <target>La référence de paiement doit contenir une valeur de 27 chiffres.</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Localization-CHE_EHC - Method PurchPos_OnAfterCheckMandatoryFields - NamedType RefferenceNo2Err</note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Suggested translation inserted.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIN Localization-CHE_EHC - Method PurchPos_OnAfterCheckMandatoryFields - NamedType RefferenceNo2Err</note>
         </trans-unit>
-        <trans-unit id="Codeunit 826933979 - Method 1166343045 - NamedType 3546020941" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 470048549 - Method 1166343045 - NamedType 3546020941" size-unit="char" translate="yes" xml:space="preserve">
           <source>Payment Reference must contain a value of 27 digits in Vendor Ledger Entry %1</source>
           <target>La référence de paiement doit contenir une valeur de 27 chiffres dans l'entrée %1 du grand livre des fournisseurs.</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Localization-CHE_EHC - Method VendLedgEntryEdit_OnBeforeVendLedgEntryModify - NamedType RefferenceNo2Err</note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Suggested translation inserted.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIN Localization-CHE_EHC - Method VendLedgEntryEdit_OnBeforeVendLedgEntryModify - NamedType RefferenceNo2Err</note>
         </trans-unit>
         <trans-unit id="Report 2310190039 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Sales - Invoice</source>
@@ -1516,12 +1522,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - ReportDataItem Header - Property RequestFilterHeading</note>
         </trans-unit>
-        <trans-unit id="Report 3234294113 - ReportDataItem 1735507514 - Method 3245603402 - NamedType 19795414" size-unit="char" translate="yes" xml:space="preserve">
-          <source>%1%</source>
-          <target>%1%</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - ReportDataItem Line - Method OnAfterGetRecord - NamedType LineDiscountPctText_Mesg</note>
-        </trans-unit>
         <trans-unit id="Report 3234294113 - ReportDataItem 1735507514 - Method 3245603402 - NamedType 2739152996" size-unit="char" translate="yes" xml:space="preserve">
           <source>EAN: </source>
           <target>EAN: </target>
@@ -1550,7 +1550,6 @@
           <source>Filter Location code</source>
           <target>Filter Location code</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - Control LocationCodeFilter - Property Caption</note>
         </trans-unit>
         <trans-unit id="Report 3234294113 - Control 819503179 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
@@ -1569,7 +1568,6 @@
           <source>Logo Print</source>
           <target>Imprimer le logo</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Suggested translation inserted.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - Control LogoPrintOption - Property Caption</note>
         </trans-unit>
         <trans-unit id="Report 3234294113 - Control 2737174276 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
@@ -3245,6 +3243,13 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AssortOrderSubf Ext_CHE_EHC - Control Old Shipped Quantity_CHE - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 2995742425 - Control 2818852756 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
+          <source>Specifies the value of the Credit-to Customer No. field.</source>
+          <target>Indique la valeur du champ Numéro de client du crédit.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIN Pag21-Ext50100 - Control Credit-to Customer No._CHE_EHC - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 873661502 - Control 77470186 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3061567478">
           <source>Shows the quantity shipped in the previous system.</source>
           <target>Indique la quantité expédiée dans le système précédent.</target>
@@ -3256,6 +3261,13 @@
           <target>Ancienne quantité expédiée (NAV)</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Ass. Promo Line_Ext_CHE_EHC - Field Old Shipped Quantity_CHE - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3809077784 - Field 1283640094 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
+          <source>Credit-to Customer No.</source>
+          <target>N° de crédit au client</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension EIN Tab18-Ext50100 - Field EIN Credit-to Customer No. - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3809077784 - Field 1376314934 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
           <source>Print Tariff No. on Invoice</source>
