@@ -1240,6 +1240,14 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType HomePageLbl</note>
         </trans-unit>
+        <trans-unit id="Report 3234294113 - NamedType 3451087388" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item No.</source>
+          <target>Artikelnr.</target>
+          
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Suggested translation inserted.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType ItemNo_Line_lbl</note>
+        </trans-unit>
         <trans-unit id="Report 3234294113 - NamedType 3184947576" size-unit="char" translate="yes" xml:space="preserve">
           <source>Job No.</source>
           <target>Projektnr.</target>
@@ -1543,13 +1551,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - Control DisplayAsmInformation - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Report 3234294113 - Control 1115309124 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Filter Location code</source>
-          <target>Filter Lagerort Code</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - Control LocationCodeFilter - Property Caption</note>
-        </trans-unit>
         <trans-unit id="Report 3234294113 - Control 819503179 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies that interactions with the contact are logged.</source>
           <target>Legt fest, dass Aktivitäten mit dem Kontakt protokolliert werden.</target>
@@ -1566,7 +1567,6 @@
           <source>Logo Print</source>
           <target>Logo drucken</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Suggested translation inserted.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - Control LogoPrintOption - Property Caption</note>
         </trans-unit>
         <trans-unit id="Report 3234294113 - Control 2737174276 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
@@ -2665,7 +2665,7 @@
         </trans-unit>
         <trans-unit id="Report 2739570661 - NamedType 3716068133" size-unit="char" translate="yes" xml:space="preserve">
           <source>Shipping Agent:</source>
-          <target>Spediteur</target>
+          <target>Versender</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales-Credit Memo - NamedType Text76702Lbl</note>
         </trans-unit>
