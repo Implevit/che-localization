@@ -591,17 +591,11 @@ report 50105 "EIN Standard Sales - Shipm501"
 
                 trigger OnAfterGetRecord()
                 var
-                    EinhellCoreSetup: Record "Einhell Core Setup_EH001_EHC";
-                    ItemFeeAssignment_EHC: Record "Item Fee Assignment_EHC";
                     CustomerSellTo: Record Customer;
                     l_SalesLine: REcord "Sales Line";
-                    EnvironmentInfo: Codeunit "Environment Information";
-                    LineDiscountPctText_Mesg: Label '%1%';
-                    PostedShipmentDate: Date;
-                    EANLbl: Label 'EAN: ';
                     Item: Record item;
-
-
+                    EnvironmentInfo: codeunit "Environment Information";
+                    EANLbl: label 'EAN: ';
 
                 begin
                     if Type = Type::"G/L Account" then
