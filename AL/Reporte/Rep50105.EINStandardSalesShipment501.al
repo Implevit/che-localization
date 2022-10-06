@@ -1226,7 +1226,7 @@ report 50105 "EIN Standard Sales - Shipm501"
         FillNameValueTable(LeftHeader, ' ', ' ');
         FillNameValueTable(LeftHeader, ' ', ' ');
         FillNameValueTable(LeftHeader, ' ', ' ');
-        FillNameValueTable(LeftHeader, Text76703, ' ');
+        FillNameValueTable(LeftHeader, Text76703, Header."EIN Order Text");
         if SalesPersonText <> '' then
             FillNameValueTable(LeftHeader, SalespersonLbl, SalesPersonText)
         else
