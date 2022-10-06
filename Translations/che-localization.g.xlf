@@ -2703,6 +2703,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Ass. Promo Line_Ext_CHE_EHC - Field Old Shipped Quantity_CHE - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 2436066858 - Field 2012057963 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3118382297">
+          <source>Order Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension EIN Tab110-Ext50103 - Field EIN Order Text - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3809077784 - Field 1283640094 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
           <source>Credit-to Customer No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2712,6 +2717,11 @@
           <source>Print Tariff No. on Invoice</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension EIN Tab18-Ext50100 - Field EIN Print Tariff No.on Invoice - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1131648358 - Field 2012057963 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+          <source>Order Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension EIN Tab36-Ext50102 - Field EIN Order Text - Property Caption</note>
         </trans-unit>
       </group>
     </body>
