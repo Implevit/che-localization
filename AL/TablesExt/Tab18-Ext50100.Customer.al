@@ -7,5 +7,13 @@ tableextension 50100 "EIN Tab18-Ext50100" extends Customer
             DataClassification = ToBeClassified;
             Caption = 'Print Tariff No. on Invoice';
         }
+
+        field
+        (50101; "EIN Credit-to Customer No."; Code[20])
+        {
+            Caption = 'Credit-to Customer No.';
+            DataClassification = ToBeClassified;
+            TableRelation = Customer;
+        }
     }
 }
