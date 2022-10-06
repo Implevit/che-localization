@@ -3253,7 +3253,6 @@
           <source>Order Text</source>
           <target>Auftrag Text</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension EIN Tab110-Ext50103 - Field EIN Order Text - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3809077784 - Field 1283640094 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
@@ -3272,7 +3271,6 @@
           <source>Order Text</source>
           <target>Auftrag Text</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension EIN Tab36-Ext50102 - Field EIN Order Text - Property Caption</note>
         </trans-unit>
       </group>
