@@ -524,6 +524,9 @@ report 50102 "EIN Standard Sales-Credit Memo"
             column(AmountLbl; AmountLbl)
             {
             }
+            column(ItemNoLbl; ItemNoLbl)
+            {
+            }
             dataitem(Line; "Sales Cr.Memo Line")
             {
                 DataItemLink = "Document No." = FIELD("No.");
@@ -565,7 +568,7 @@ report 50102 "EIN Standard Sales-Credit Memo"
                 column(LineDiscountPercentText_Line; LineDiscountPctText)
                 {
                 }
-                column(LineAmount_Line; FormattedLineAmount)
+                column(LineAmount_Line; "Line Amount")
                 {
                     AutoFormatExpression = GetCurrencyCode();
                     AutoFormatType = 1;
@@ -591,7 +594,7 @@ report 50102 "EIN Standard Sales-Credit Memo"
                 column(ShipmentDate_Line_Lbl; PostedShipmentDateLbl)
                 {
                 }
-                column(Quantity_Line; FormattedQuantity)
+                column(Quantity_Line; Quantity)
                 {
                 }
                 column(Quantity_Line_Lbl; FieldCaption(Quantity))
@@ -600,7 +603,7 @@ report 50102 "EIN Standard Sales-Credit Memo"
                 column(Type_Line; Format(Type))
                 {
                 }
-                column(UnitPrice; FormattedUnitPrice)
+                column(UnitPrice; "Unit Price")
                 {
                     AutoFormatExpression = GetCurrencyCode();
                     AutoFormatType = 2;
@@ -1141,7 +1144,6 @@ report 50102 "EIN Standard Sales-Credit Memo"
                 AddrIndex: integer;
                 EmptyIndex: integer;
             begin
-                //HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
                 if not IsReportInPreviewMode() then
                     CODEUNIT.Run(CODEUNIT::"Sales Cr. Memo-Printed", Header);
 
@@ -1544,6 +1546,7 @@ report 50102 "EIN Standard Sales-Credit Memo"
         VRGTotalLbl: Label 'Total %1';
         AmountLbl: Label 'Amount';
         ReturnNoLbl: Label 'Return No.';
+        ItemNoLbl: Label 'Item No.';
 
     local procedure InitLogInteraction()
     begin

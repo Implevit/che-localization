@@ -233,6 +233,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Invoice - NamedType InvNoLbl</note>
         </trans-unit>
+        <trans-unit id="Report 2310190039 - NamedType 3938104762" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Invoice - NamedType ItemNoLbl</note>
+        </trans-unit>
         <trans-unit id="Report 2310190039 - NamedType 327693762" size-unit="char" translate="yes" xml:space="preserve">
           <source>Job No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2078,6 +2083,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales-Credit Memo - NamedType InvNoLbl</note>
         </trans-unit>
+        <trans-unit id="Report 2739570661 - NamedType 3938104762" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales-Credit Memo - NamedType ItemNoLbl</note>
+        </trans-unit>
         <trans-unit id="Report 2739570661 - NamedType 3927750863" size-unit="char" translate="yes" xml:space="preserve">
           <source>Vendor no.: 970471</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2482,6 +2492,11 @@
           <source>Order No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales-Order Conf. - NamedType InvNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2053024908 - NamedType 3938104762" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales-Order Conf. - NamedType ItemNoLbl</note>
         </trans-unit>
         <trans-unit id="Report 2053024908 - NamedType 1448166496" size-unit="char" translate="yes" xml:space="preserve">
           <source>Payment Discount on VAT</source>

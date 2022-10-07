@@ -608,6 +608,9 @@
             column(InclVRGfeeLbl; InclVRGfeeLbl)
             {
             }
+            column(ItemNoLbl; ItemNoLbl)
+            {
+            }
             //QR-CODE++
             column(g_HideQrZahlschein; g_HideQrZahlschein)
             {
@@ -731,7 +734,7 @@
                 column(LineDiscountPercentText_Line; LineDiscountPctText)
                 {
                 }
-                column(LineAmount_Line; FormattedLineAmount)
+                column(LineAmount_Line; "Line Amount")
                 {
                     AutoFormatExpression = GetCurrencyCode();
                     AutoFormatType = 1;
@@ -739,7 +742,7 @@
                 column(ItemNo_Line; "No.")
                 {
                 }
-                column(ItemReferenceNo_Line; "Item Reference No.")
+                column(ItemReferenceNo_Line; EAN_Short)
                 {
                 }
                 column(ShipmentDate_Line; Format("Shipment Date"))
@@ -748,13 +751,13 @@
                 column(ShipmentDate_Line_Lbl; PostedShipmentDateLbl)
                 {
                 }
-                column(Quantity_Line; FormattedQuantity)
+                column(Quantity_Line; Quantity)
                 {
                 }
                 column(Type_Line; Format(Type))
                 {
                 }
-                column(UnitPrice; FormattedUnitPrice)
+                column(UnitPrice; "Unit Price")
                 {
                     AutoFormatExpression = GetCurrencyCode();
                     AutoFormatType = 2;
@@ -962,14 +965,16 @@
                                 TariffNo := TariffNoLbl + Item."Tariff No.";
 
                     EAN := '';
+                    EAN_short := '';
                     if (Type = Type::Item) then begin
                         ItemReference.Reset();
                         ItemReference.SETCURRENTKEY("Item No.", "Variant Code", "Unit of Measure", "Reference Type", "Reference Type No.", "Reference No.");
                         ItemReference.Setrange("Item No.", "No.");
                         ItemReference.Setrange("Reference Type", ItemReference."Reference Type"::"Bar Code");
-                        if ItemReference.FindFirst() then
-                            EAN := EANLbl + ItemReference."Reference No."
-                        else
+                        if ItemReference.FindFirst() then begin
+                            EAN := EANLbl + ItemReference."Reference No.";
+                            EAN_short := ItemReference."Reference No.";
+                        end else
                             EAN := '';
 
                         CustomerSellTo.Get(Header."Sell-to Customer No.");
@@ -1821,6 +1826,7 @@
         TotalInclVATText: Text[50];
         TariffNo: Text[50];
         EAN: Text[60];
+        EAN_Short: Text[60];
         LineDiscountPctText: Text;
         PmtDiscText: Text;
         RemainingAmountTxt: Text;
@@ -1957,6 +1963,7 @@
         YourOrderNumberLbl: Label 'Your order number';
         InclVRGfeeLbl: Label 'incl. VRG fee';
         UStIdNrLbl: Label 'USt-IdNr.';
+        ItemNoLbl: Label 'Item No.';
         g_HideQrZahlschein: Boolean;
     //QR-CODE--        
 

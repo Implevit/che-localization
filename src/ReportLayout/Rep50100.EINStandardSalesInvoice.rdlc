@@ -3016,13 +3016,13 @@
                               <TablixBody>
                                 <TablixColumns>
                                   <TablixColumn>
-                                    <Width>2cm</Width>
+                                    <Width>2.83568cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
                                     <Width>2.5cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>4.84667cm</Width>
+                                    <Width>4.04871cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
                                     <Width>1.54987cm</Width>
@@ -3053,7 +3053,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!ItemNo_Line_Lbl.Value</Value>
+                                                    <Value>=Fields!ItemNoLbl.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -3074,7 +3074,6 @@
                                               </BottomBorder>
                                               <VerticalAlign>Bottom</VerticalAlign>
                                               <PaddingLeft>5pt</PaddingLeft>
-                                              <PaddingRight>5pt</PaddingRight>
                                             </Style>
                                           </Textbox>
                                         </CellContents>
@@ -3527,7 +3526,6 @@
                                                 <Style>None</Style>
                                               </Border>
                                               <PaddingLeft>5pt</PaddingLeft>
-                                              <PaddingRight>5pt</PaddingRight>
                                             </Style>
                                           </Textbox>
                                         </CellContents>
@@ -4605,8 +4603,6 @@
                                                 <Color>LightGrey</Color>
                                                 <Style>None</Style>
                                               </Border>
-                                              <PaddingLeft>5pt</PaddingLeft>
-                                              <PaddingRight>5pt</PaddingRight>
                                             </Style>
                                           </Textbox>
                                         </CellContents>
@@ -5364,7 +5360,7 @@
                               <Top>13.75676cm</Top>
                               <Left>0.31496cm</Left>
                               <Height>3.90448cm</Height>
-                              <Width>18.4787cm</Width>
+                              <Width>18.51642cm</Width>
                               <ZIndex>1</ZIndex>
                               <Visibility>
                                 <Hidden>=iif((Fields!EDIPartnerCodeLayout2.Value = false), false, true)</Hidden>
@@ -7797,7 +7793,6 @@
                                               <PaddingBottom>2pt</PaddingBottom>
                                             </Style>
                                           </Textbox>
-                                          <rd:Selected>true</rd:Selected>
                                         </CellContents>
                                       </TablixCell>
                                     </TablixCells>
@@ -14736,10 +14731,9 @@
                                                 <Color>LightGrey</Color>
                                                 <Style>None</Style>
                                               </Border>
-                                              <PaddingLeft>5pt</PaddingLeft>
-                                              <PaddingRight>5pt</PaddingRight>
                                             </Style>
                                           </Textbox>
+                                          <rd:Selected>true</rd:Selected>
                                         </CellContents>
                                       </TablixCell>
                                       <TablixCell>
@@ -16264,6 +16258,9 @@ End Function
         <Field Name="InclVRGfeeLbl">
           <DataField>InclVRGfeeLbl</DataField>
         </Field>
+        <Field Name="ItemNoLbl">
+          <DataField>ItemNoLbl</DataField>
+        </Field>
         <Field Name="g_HideQrZahlschein">
           <DataField>g_HideQrZahlschein</DataField>
         </Field>
@@ -16372,6 +16369,9 @@ End Function
         <Field Name="LineAmount_Line">
           <DataField>LineAmount_Line</DataField>
         </Field>
+        <Field Name="LineAmount_LineFormat">
+          <DataField>LineAmount_LineFormat</DataField>
+        </Field>
         <Field Name="ItemNo_Line">
           <DataField>ItemNo_Line</DataField>
         </Field>
@@ -16387,11 +16387,17 @@ End Function
         <Field Name="Quantity_Line">
           <DataField>Quantity_Line</DataField>
         </Field>
+        <Field Name="Quantity_LineFormat">
+          <DataField>Quantity_LineFormat</DataField>
+        </Field>
         <Field Name="Type_Line">
           <DataField>Type_Line</DataField>
         </Field>
         <Field Name="UnitPrice">
           <DataField>UnitPrice</DataField>
+        </Field>
+        <Field Name="UnitPriceFormat">
+          <DataField>UnitPriceFormat</DataField>
         </Field>
         <Field Name="UnitOfMeasure">
           <DataField>UnitOfMeasure</DataField>

@@ -401,6 +401,9 @@ report 50106 "EIN Standard Sales-Order Conf."
             column(LineDiscountInPctLbl; LineDiscountInPctLbl)
             {
             }
+            column(ItemNoLbl; ItemNoLbl)
+            {
+            }
             dataitem(Line; "Sales Line")
             {
                 DataItemLink = "Document No." = FIELD("No.");
@@ -443,7 +446,7 @@ report 50106 "EIN Standard Sales-Order Conf."
                 column(LineDiscountPct; LineDiscountPct)
                 {
                 }
-                column(LineAmount_Line; FormattedLineAmount)
+                column(LineAmount_Line; "Line Amount")
                 {
                     AutoFormatExpression = "Currency Code";
                     AutoFormatType = 1;
@@ -469,7 +472,7 @@ report 50106 "EIN Standard Sales-Order Conf."
                 column(PlannedShipmentDate_Line_Lbl; FieldCaption("Planned Shipment Date"))
                 {
                 }
-                column(Quantity_Line; FormattedQuantity)
+                column(Quantity_Line; Quantity)
                 {
                 }
                 column(Quantity_Line_Lbl; FieldCaption(Quantity))
@@ -478,7 +481,7 @@ report 50106 "EIN Standard Sales-Order Conf."
                 column(Type_Line; Format(Type))
                 {
                 }
-                column(UnitPrice; FormattedUnitPrice)
+                column(UnitPrice; "Unit Price")
                 {
                     AutoFormatExpression = "Currency Code";
                     AutoFormatType = 2;
@@ -1205,7 +1208,8 @@ report 50106 "EIN Standard Sales-Order Conf."
         SalesHeaderShipmentDateLbl: label 'Shipment Date';
         BilltoCustomerNoLbl: label 'Bill-to Customer No.';
         SalespersonPurchaserLbl: label 'Seller';
-        LineDiscountInPctLbl: Label 'Line discount %';
+        LineDiscountInPctLbl: label 'Line discount %';
+        ItemNoLbl: label 'Item No.';
         PmtDiscText: Text;
         ShowWorkDescription: Boolean;
         WorkDescriptionLine: Text;
