@@ -366,7 +366,7 @@ report 50102 "EIN Standard Sales-Credit Memo"
             column(SalesInvoiceLineDiscount_Lbl; SalesInvLineDiscLbl)
             {
             }
-            column(DocumentTitle_Lbl; SalesCreditMemoLbl)
+            column(DocumentTitle_Lbl; SalesCreditMemoLbl + ' ' + "No.")
             {
             }
             column(ShowWorkDescription; ShowWorkDescription)
@@ -1212,11 +1212,15 @@ report 50102 "EIN Standard Sales-Credit Memo"
                 CustomerSellTo.Get(Header."Sell-to Customer No.");
                 PrintTarifNo := CustomerSellTo."EIN Print Tariff No.on Invoice";
 
+                //13.10.2022 ++ Immer Sell-to Customer No.    
+                FormatAddr.SalesCrMemoSellTo(ShipToAddr, Header);
+                /*              
                 if CustomerSellTo."Global Dimension 2 Code" = '80' then
                     FormatAddr.SalesCrMemoSellTo(ShipToAddr, Header)
                 else
                     FormatAddr.SalesCrMemoShipTo(ShipToAddr, CustAddr, Header);
-             
+                */
+                //13.10.2022 -- Immer Sell-to Customer No.    
                 for AddrIndex := 1 to 8 do
                     if CustAddr[AddrIndex] <> '' then
                         EmptyIndex := AddrIndex + 1;
@@ -1240,9 +1244,12 @@ report 50102 "EIN Standard Sales-Credit Memo"
                 if Header."EDI Partner Code_EHC" = 'JUMBO' then begin 
                     GLNCust.Get(Header."Bill-to Customer No.");
                     Clear(ShipToAddr);
+                    //13.10.2022 ++ Immer Sell-to Customer No.
+                    /*
                     FormatAddr.SalesCrMemoShipTo(ShipToAddr, CustAddr, Header);
                     if not SellToCust.Get("Sell-to Customer No.") then
                         CLear(SellToCust);
+                    */
                     CustAccountLabelText := CustAccountLabel;
                     EDIPartnerCodeLayout2 := true;
                     HeaderSubText := '';
