@@ -385,7 +385,7 @@
             column(Contact_Lbl; CompanyInfo.GetContactUsText())
             {
             }
-            column(DocumentTitle_Lbl; DocumentCaption())
+            column(DocumentTitle_Lbl; DocumentCaption() + ' ' + "No.")
             {
             }
             column(YourDocumentTitle_Lbl; YourSalesInvoiceLbl)
