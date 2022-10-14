@@ -1521,7 +1521,7 @@
                 if "Amount Including VAT" = 0 then begin
                     if not CurrReport.Preview then
                         CODEUNIT.Run(CODEUNIT::"Sales Inv.-Printed", Header);
-                    CurrReport.QUIT();
+                    //CurrReport.QUIT(); // Auch Rechnungen mit Betrag 0 drucken
                 end;
 
                 CurrReport.Language := Language.GetLanguageID(Header."Language Code");
