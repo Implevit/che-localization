@@ -586,7 +586,7 @@
             }
             column(EANCodeLbl; EANCodeLbl)
             {
-            }    
+            }
             column(VendorItemNoLbl; VendorItemNoLbl)
             {
             }
@@ -663,7 +663,9 @@
                     Language: Codeunit Language;
                     lCountryCodeBackup: code[10];
                     lCustomerModify: Boolean;
+                    CRLF: Char;
                 begin
+                    CRLF := 10;
                     clear(lCountryCodeBackup);
                     lCustomerModify := False;
                     if not g_HideQrZahlschein then
@@ -693,6 +695,20 @@
                                 AmountText := FormatAmount(Amount);
                                 PaymentReferenceNoText := SwissQRBillMgt.FormatPaymentReference("Payment Reference Type", "Payment Reference");
                                 AddInformationText := ReportAddInformationInfo(SwissQRBillBuffer);
+
+                                //JHE++ Hotfix Zahlbar durch RE Adresse
+                                PayableBy := CustAddr[1] + CRLF + CustAddr[2] + CRLF + CustAddr[3];
+                                if (CustAddr[4] <> '') and (CustAddr[4] <> 'Schweiz') then
+                                    PayableBy := PayableBy + CRLF + CustAddr[4];
+                                //else
+                                //    if CustAddr[4] <> 'Schweiz' then
+                                //        PayableBy := 'CH ' + PayableBy;
+                                if (CustAddr[5] <> '') and (CustAddr[5] <> 'Schweiz') then
+                                    PayableBy := PayableBy + CRLF + CustAddr[5];
+                                //else
+                                //    if CustAddr[5] <> 'Schweiz' then
+                                //        PayableBy := 'CH ' + PayableBy;
+                                //JHE-- Hotfix Zahlbar durch RE Adresse
                             end;
                         end else
                             CurrReport.Skip();
@@ -803,7 +819,7 @@
                 column(FeeItemText; FeeItemText)
                 {
                 }
-                 column(FeeItemAmount; FeeItemAmount)
+                column(FeeItemAmount; FeeItemAmount)
                 {
                 }
                 column(FeeItemLineAmount; FeeItemLineAmount)
@@ -986,11 +1002,11 @@
                         ItemReference.Setrange("Reference Type", ItemReference."Reference Type"::"Customer Group");
                         if ItemReference.FindFirst() then
                             CustItemNo := ItemReference."Reference No.";
-                     end;
+                    end;
 
                     FeeItemText := '';
                     FeeItemAmount := 0;
-                    FeeItemLineAmount := 0; 
+                    FeeItemLineAmount := 0;
                     if Line.Type = Line.Type::Item then begin
                         ItemFeeAssignment_EHC.Reset();
                         ItemFeeAssignment_EHC.SetRange("Item Fee Type Code", 'RECYCLING');
@@ -1007,11 +1023,11 @@
 
                     NoPrintFeeGLAccount := false;
                     if Line.Type = Line.Type::"G/L Account" then
-                        if EinhellCoreSetup.Get() then 
+                        if EinhellCoreSetup.Get() then
                             if EinhellCoreSetup."Item Fee G/L Account" = Line."No." then
                                 NoPrintFeeGLAccount := true;
-     
-                    VRGTotalText := StrSubstNo(VRGTotalLbl,GLSetup."LCY Code");
+
+                    VRGTotalText := StrSubstNo(VRGTotalLbl, GLSetup."LCY Code");
                     //EIN--
 
                     InitializeShipmentLine();
@@ -1443,7 +1459,7 @@
                     end;
                 end;
             }
-           
+
             trigger OnAfterGetRecord()
             var
                 CurrencyExchangeRate: Record "Currency Exchange Rate";
@@ -1521,7 +1537,7 @@
                 if "Amount Including VAT" = 0 then begin
                     if not CurrReport.Preview then
                         CODEUNIT.Run(CODEUNIT::"Sales Inv.-Printed", Header);
-                    //CurrReport.QUIT(); // Auch Rechnungen mit Betrag 0 drucken
+                    //CurrReport.QUIT();
                 end;
 
                 CurrReport.Language := Language.GetLanguageID(Header."Language Code");
@@ -1585,9 +1601,9 @@
                     ShipToAddr[EmptyIndex] := GLNCust.GLN;
                 end;
 
-                HeaderSubText := ' | 7612033000006';    
+                HeaderSubText := ' | 7612033000006';
                 EDIPartnerCodeLayout2 := false;
-                if Header."EDI Partner Code_EHC" = 'JUMBO' then begin 
+                if Header."EDI Partner Code_EHC" = 'JUMBO' then begin
                     GLNCust.Get(Header."Bill-to Customer No.");
                     Clear(ShipToAddr);
                     FormatAddr.SalesInvShipTo(ShipToAddr, CustAddr, Header);
@@ -2110,7 +2126,7 @@
         FillNameValueTable(LeftHeader, CompanyFooter.FieldCaption("VAT Registration No."), CompanyFooter."VAT Registration No.");
 
         if EDIPartnerCodeLayout2 then
-            FillNameValueTable(LeftHeader, UStIdNrLbl, 'CHE-113.193.989 MWST / ZAK-Kto. 7833-4');    
+            FillNameValueTable(LeftHeader, UStIdNrLbl, 'CHE-113.193.989 MWST / ZAK-Kto. 7833-4');
 
         /*
         //Original
@@ -2136,7 +2152,7 @@
         RightHeader.DeleteAll();
 
         FillNameValueTable(RightHeader, BilltoCustomerNoLbl, Header."Bill-to Customer No.");
-        if EDIPartnerCodeLayout2 then 
+        if EDIPartnerCodeLayout2 then
             FillNameValueTable(RightHeader, YourOrderNumberLbl, Header."External Document No.")
         else
             FillNameValueTable(RightHeader, Header.FieldCaption("External Document No."), Header."External Document No.");
@@ -2505,7 +2521,7 @@
         NextEntryNo := NextEntryNo + 1;
     end;
 
-    procedure SetVRGBuffer(_ItemFeeGroupCode: Code[20]; _FeeItemQuantity: Decimal; _FeeItemAmount: Decimal; _FeeItemLineAmount:Decimal)
+    procedure SetVRGBuffer(_ItemFeeGroupCode: Code[20]; _FeeItemQuantity: Decimal; _FeeItemAmount: Decimal; _FeeItemLineAmount: Decimal)
     begin
         ShowVRGData := true;
 
@@ -2523,12 +2539,12 @@
             VRGBuffer."No." := _ItemFeeGroupCode;
             VRGBuffer."Qty. per Parent" := _FeeItemQuantity;
             VRGBuffer."Unit Cost" := _FeeItemAmount;
-            VRGBuffer."Total Cost" := _FeeItemLineAmount;      
+            VRGBuffer."Total Cost" := _FeeItemLineAmount;
             VRGBuffer.Insert();
         end;
     end;
 
-     procedure SendAsPdf(): Boolean
+    procedure SendAsPdf(): Boolean
     begin
         if not ThrowExeption() then
             exit(STRPOS(LOWERCASE(GETLASTERRORCALLSTACK), 'savereportaspdf') <> 0);
