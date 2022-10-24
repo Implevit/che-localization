@@ -1241,11 +1241,12 @@ report 50102 "EIN Standard Sales-Credit Memo"
 
                 HeaderSubText := ' | 7612033000006';    
                 EDIPartnerCodeLayout2 := false;
-                if Header."EDI Partner Code_EHC" = 'JUMBO' then begin 
+
+                if Header."EDI Partner Code_EHC" = 'JUMBO' then begin
                     GLNCust.Get(Header."Bill-to Customer No.");
-                    Clear(ShipToAddr);
                     //13.10.2022 ++ Immer Sell-to Customer No.
                     /*
+                    Clear(ShipToAddr);
                     FormatAddr.SalesCrMemoShipTo(ShipToAddr, CustAddr, Header);
                     if not SellToCust.Get("Sell-to Customer No.") then
                         CLear(SellToCust);
@@ -1256,7 +1257,7 @@ report 50102 "EIN Standard Sales-Credit Memo"
                     LiefNoTxt := LiefNoLbl;
                     ShipToGLN := SellToCust.GLN;
                 end;
-               
+
                 CLEAR(DeliveryPerson);
 
                 if WindowsLogin.GET(UserSecurityId()) then
