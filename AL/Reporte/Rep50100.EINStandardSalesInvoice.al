@@ -2148,6 +2148,8 @@
     end;
 
     local procedure FillRightHeader()
+    var
+        CompanyFooter: Record "Company Information";
     begin
         RightHeader.DeleteAll();
 
@@ -2158,6 +2160,8 @@
             FillNameValueTable(RightHeader, Header.FieldCaption("External Document No."), Header."External Document No.");
         FillNameValueTable(RightHeader, Header.FieldCaption("Order No."), Header."Order No.");
         FillNameValueTable(RightHeader, DeliveryNoLbl, SalesShipmentHdr."No.");
+        if Header."EDI Partner Code_EHC" = 'JUMBO' then
+            FillNameValueTable(RightHeader, CompanyFooter.FieldCaption("VAT Registration No."), Cust."VAT Registration No.");
         //FillNameValueTable(RightHeader, Header.FieldCaption("Document Date"), Format(Header."Document Date", 0, 4));
         FillNameValueTable(RightHeader, Header.FieldCaption("Document Date"), Format(Header."Document Date", 0, '<Day>/<Month>/<YEAR>'));
         //FillNameValueTable(RightHeader, Header.FieldCaption("Order Date"), Format(Header."Order Date", 0, 4));
