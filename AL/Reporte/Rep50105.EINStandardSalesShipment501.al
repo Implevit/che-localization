@@ -389,8 +389,9 @@ report 50105 "EIN Standard Sales - Shipm501"
             column(LogoPrint; LogoPrint)
             {
             }
-
-
+            column(SellToText; SellToText)
+            {
+            }
             //EIN--
             dataitem(Line; "Sales Shipment Line")
             {
@@ -859,6 +860,13 @@ report 50105 "EIN Standard Sales - Shipm501"
                 CalcFields("Work Description");
                 ShowWorkDescription := "Work Description".HasValue;
 
+                Clear(CompanyAddr);
+                SellToText := '';
+                if "Ship-to Code" = 'JVP' then begin
+                    SellToText := SellToLbl;
+                    FormatAddr.SalesShptSellTo(CompanyAddr, Header);
+                end;
+
                 FormatAddressFields(Header);
                 FormatDocumentFields(Header);
                 if SellToContact.Get("Sell-to Contact No.") then;
@@ -1051,7 +1059,7 @@ report 50105 "EIN Standard Sales - Shipm501"
         Discountlbl_SL: Text;//EIN
         Amountlbl_SL: Text;//EIN
         LogoPrint: Boolean;//EIN        
-
+        SellToText: Text[30];
         LocationCodeFilter: Code[20]; //EIN
         CompanyLogoPosition: Integer;
         TrackingSpecCount: Integer;
@@ -1101,31 +1109,18 @@ report 50105 "EIN Standard Sales - Shipm501"
         LotNoCaptionLbl: Label 'Lot No.';
         DescriptionCaptionLbl: Label 'Description';
         NoCaptionLbl: Label 'No.';
-        PurchaseOrderNoLbl: Label 'Purchase Order No.';
-        OurDocumentNoLbl: Label 'Our Document No.';
         GrossWeightLbl: Label 'Unit Gross Weight';
         NetWeightLbl: Label 'Unit Net Weight';
         UnitVolumeLbl: Label 'Unit Volume';
         UnitsperParcelLbl: Label 'Units per Parcel';
         TariffNoLbl: Label 'Tariff No.: ';//EIN
-        BilltoCustomerNoLbl: Label 'Invoice to customer no.';//EIN
-
-        SelltoCustomerNoLbl: Label 'Invoice to customer no.';//EIN
-        YourOrderNumberLbl: Label 'Your order number';//EIN
-        DeliveryNoLbl: Label 'Delivery no.';//EIN
-        Text000: label 'Salesperson'; //DEU=Verkäufer;ENU=Salesperson
-        Text001: label 'COPY'; //DEU=KOPIE;ENU=COPY
-        Text002: label 'Shipment %1'; //DEU=Lieferschein %1;ENU=Shipment %1;FRA=Bulletin de livraison %1;ITS=Spedizioni
-        Text003: label 'Page %1'; //DEU=Seite %1;ENU=Page %1;DES=Seite %1;ITS=Pagina %1;FRS=Page %1
-        Text76701: label 'Official in Charge:'; //DEU=Sachbearbeiter:;ENU=Official in Charge:;ITS=Operatore:;FRS=Personne:
         Text76702: label 'Shipping Agent:'; //DEU=Versender:;ENU=Shipping Agent:;FRS=Mode de envoi:
         Text76703: label 'Ref:'; //ENU=Ref:;DES=Ref:;ITS=Ref:;FRS=Ref:
-        VATRegistrationNo_lbl: label 'VAT Registration No.';//ENU=;FRA=N° identif. intracomm.;DES=MWST Nr.;ITS=Nr. IVA;FRS=N° identif. intracomm.
         PostedDeliveryDateLbl: label 'Delivery Date';
         CrossReferenceNoLbl: Label 'Cross-Reference No.'; //ENU=;DES=Referenznr.;ITS=Nr. Referenza;FRS=Référence N°
         Quantitylbl_SL: label 'Ordered Quantity'; //DEU=Bestell-\menge;ENU=Ordered Quantity;DES=Bestell-\menge;ITS=Quantità;FRS=Quantité commandé
-
         ItemNo_Line_lbl: label 'Item No.'; //DEU=Artikelnr.;ENU=Item No.;ITS=Articolo;FRS=Article
+        SellToLbl: Label 'SELL TO:';
 
     protected var
         TempTrackingSpecBuffer: Record "Tracking Specification" temporary;
@@ -1295,14 +1290,10 @@ report 50105 "EIN Standard Sales - Shipm501"
 
     local procedure FormatAddressFields(var SalesShipmentHeader: Record "Sales Shipment Header")
     begin
-        FormatAddr.GetCompanyAddr(SalesShipmentHeader."Responsibility Center", RespCenter, CompanyInfo, CompanyAddr);
+        //FormatAddr.GetCompanyAddr(SalesShipmentHeader."Responsibility Center", RespCenter, CompanyInfo, CompanyAddr); //EIN++
         FormatAddr.SalesShptBillTo(CustAddr, ShipToAddr, SalesShipmentHeader);
         FormatAddr.SalesShptShipTo(ShipToAddr, SalesShipmentHeader);
         ShowCustAddr := FormatAddr.SalesShptBillTo(CustAddr, ShipToAddr, SalesShipmentHeader);
-
-        //EIN++
-        Clear(CompanyAddr);
-        //EIN--
     end;
 
     local procedure FormatDocumentFields(SalesShipmentHeader: Record "Sales Shipment Header")
