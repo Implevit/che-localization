@@ -1660,7 +1660,7 @@ report 50102 "EIN Standard Sales-Credit Memo"
         FillNameValueTable(LeftHeader, BankNameLbl, CompanyFooter."Bank Name");
         FillNameValueTable(LeftHeader, IBANLbl, CompanyFooter.IBAN);
         FillNameValueTable(LeftHeader, SwiftCodeLbl, CompanyFooter."SWIFT Code");
-        //FillNameValueTable(LeftHeader, CompanyFooter.FieldCaption("VAT Registration No."), CompanyFooter."VAT Registration No.");
+        FillNameValueTable(LeftHeader, CompanyFooter.FieldCaption("VAT Registration No."), CompanyFooter."VAT Registration No.");
 
         if EDIPartnerCodeLayout2 then
             FillNameValueTable(LeftHeader, UStIdNrLbl, 'CHE-113.193.989 MWST / ZAK-Kto. 7833-4');   
@@ -1689,7 +1689,7 @@ report 50102 "EIN Standard Sales-Credit Memo"
 
         FillNameValueTable(RightHeader, BilltoCustomerNoLbl, Header."Bill-to Customer No.");
         FillNameValueTable(RightHeader, ReturnNoLbl, Header."Return Order No.");
-        FillNameValueTable(RightHeader, CompanyInfo.FieldCaption("VAT Registration No."), CompanyInfo."VAT Registration No.");
+        //FillNameValueTable(RightHeader, CompanyInfo.FieldCaption("VAT Registration No."), CompanyInfo."VAT Registration No.");
         //FillNameValueTable(RightHeader, Header.FieldCaption("Document Date"), Format(Header."Document Date", 0, 4));
         FillNameValueTable(RightHeader, Header.FieldCaption("Document Date"), Format(Header."Document Date", 0, '<Day>/<Month>/<YEAR>'));
         //FillNameValueTable(RightHeader, Header.FieldCaption("Order Date"), Format(Header."Order Date", 0, 4));
