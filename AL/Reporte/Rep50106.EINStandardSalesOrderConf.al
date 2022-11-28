@@ -404,6 +404,34 @@ report 50106 "EIN Standard Sales-Order Conf."
             column(ItemNoLbl; ItemNoLbl)
             {
             }
+            column(VRGSummaryLbl; VRGSummaryLbl)
+            {
+            }
+            column(VRGItemNoLbl; VRGItemNoLbl)
+            {
+            }
+            column(VRGItemQuantityLbl; VRGItemQuantityLbl)
+            {
+            }
+            column(VRGItemAmountLbl; VRGItemAmountLbl)
+            {
+            }
+            column(VRGItemLineAmountLbl; VRGItemLineAmountLbl)
+            {
+            }
+            column(VRGTotalText; VRGTotalText)
+            {
+            }
+            column(ShowVRGData; ShowVRGData)
+            {
+            }
+            column(ReferenceTypeNoLbl; ReferenceTypeNoLbl)
+            {
+            }
+            column(CustomItemNoLbl; CustomItemNoLbl)
+            {
+            }
+
             dataitem(Line; "Sales Line")
             {
                 DataItemLink = "Document No." = FIELD("No.");
@@ -432,6 +460,9 @@ report 50106 "EIN Standard Sales-Order Conf."
                     AutoFormatType = 1;
                 }
                 column(Description_Line; Description)
+                {
+                }
+                column(Description2_Line; "Description 2")
                 {
                 }
                 column(Description_Line_Lbl; FieldCaption(Description))
@@ -518,6 +549,27 @@ report 50106 "EIN Standard Sales-Order Conf."
                 column(ItemReferenceNo_Lbl; FieldCaption("Item Reference No."))
                 {
                 }
+                column(CustItemNo; CustItemNo)
+                {
+                }
+                column(EAN; EAN)
+                {
+                }
+                column(ItemReferenceNo_Line; EAN_Short)
+                {
+                }
+                column(NoPrintFeeGLAccount; NoPrintFeeGLAccount)
+                {
+                }
+                column(FeeItemText; FeeItemText)
+                {
+                }
+                column(FeeItemAmount; FeeItemAmount)
+                {
+                }
+                column(FeeItemLineAmount; FeeItemLineAmount)
+                {
+                }
                 dataitem(AssemblyLine; "Assembly Line")
                 {
                     DataItemTableView = SORTING("Document No.", "Line No.");
@@ -551,7 +603,11 @@ report 50106 "EIN Standard Sales-Order Conf."
 
                 trigger OnAfterGetRecord()
                 var
+                    EinhellCoreSetup: Record "Einhell Core Setup_EH001_EHC";
+                    ItemFeeAssignment_EHC: Record "Item Fee Assignment_EHC";
+                    CustomerSellTo: Record Customer;
                     StrSubstNo_1Lbl: label '%1%';
+                    EANLbl: label 'EAN: ';
                 begin
                     if Type = Type::"G/L Account" then
                         "No." := '';
@@ -585,6 +641,58 @@ report 50106 "EIN Standard Sales-Order Conf."
                     if FirstLineHasBeenOutput then
                         Clear(DummyCompanyInfo.Picture);
                     FirstLineHasBeenOutput := true;
+                    ///RRRRRRRRRRRRRRRRRRRRRRR
+                    NoPrintFeeGLAccount := false;
+                    if Line.Type = Line.Type::"G/L Account" then
+                        if EinhellCoreSetup.Get() then
+                            if EinhellCoreSetup."Item Fee G/L Account" = Line."No." then
+                                NoPrintFeeGLAccount := true;
+
+
+                    EAN := '';
+                    EAN_short := '';
+                    if (Type = Type::Item) then begin
+                        ItemReference.Reset();
+                        ItemReference.SETCURRENTKEY("Item No.", "Variant Code", "Unit of Measure", "Reference Type", "Reference Type No.", "Reference No.");
+                        ItemReference.Setrange("Item No.", "No.");
+                        ItemReference.Setrange("Reference Type", ItemReference."Reference Type"::"Bar Code");
+                        if ItemReference.FindFirst() then begin
+                            EAN := EANLbl + ItemReference."Reference No.";
+                            EAN_short := ItemReference."Reference No.";
+                        end else
+                            EAN := '';
+
+                        CustomerSellTo.Get(Header."Sell-to Customer No.");
+
+                        CustItemNo := '';
+                        ItemReference.Reset();
+                        ItemReference.SETCURRENTKEY("Item No.", "Variant Code", "Unit of Measure", "Reference Type", "Reference Type No.", "Reference No.");
+                        ItemReference.Setrange("Item No.", "No.");
+                        ItemReference.Setrange("Reference Type No.", CustomerSellTo."Global Dimension 2 Code");
+                        ItemReference.Setrange("Reference Type", ItemReference."Reference Type"::"Customer Group");
+                        if ItemReference.FindFirst() then
+                            CustItemNo := ItemReference."Reference No.";
+                    end;
+
+                    FeeItemText := '';
+                    FeeItemAmount := 0;
+                    FeeItemLineAmount := 0;
+                    if Line.Type = Line.Type::Item then begin
+                        ItemFeeAssignment_EHC.Reset();
+                        ItemFeeAssignment_EHC.SetRange("Item Fee Type Code", 'RECYCLING');
+                        ItemFeeAssignment_EHC.SetRange("Item No.", Line."No.");
+                        ItemFeeAssignment_EHC.SetFilter("Starting Date", '%1|<=%2', 0D, Header."Posting Date");
+                        if ItemFeeAssignment_EHC.FindFirst() then begin
+                            FeeItemText := FeeItemLbl + ' ' + ItemFeeAssignment_EHC."Item Fee Group Code";
+                            FeeItemAmount := Line."Item Fee by Piece_EHC";
+                            FeeItemLineAmount := Line."Item Fee Amount_EHC";
+                            ShowVRGData := true;
+                            SetVRGBuffer(ItemFeeAssignment_EHC."Item Fee Group Code", Line.Quantity, FeeItemAmount, FeeItemLineAmount);
+                        end;
+                    end;
+
+                    VRGTotalText := StrSubstNo(VRGTotalLbl, GLSetup."LCY Code");
+
                 end;
 
                 trigger OnPreDataItem()
@@ -771,6 +879,22 @@ report 50106 "EIN Standard Sales-Order Conf."
                     VATClause.GetDescription(Header);
                 end;
             }
+            dataitem(VRGBuffer; "BOM Buffer")
+            {
+                UseTemporary = true;
+                column(VRGBuffer_ItemNo; VRGBuffer."No.")
+                {
+                }
+                column(VRGBuffer_Quantity; VRGBuffer."Qty. per Parent")
+                {
+                }
+                column(VRGBuffer_ItemAmount; VRGBuffer."Unit Cost")
+                {
+                }
+                column(VRGBuffer_ItemLineAmount; VRGBuffer."Total Cost")
+                {
+                }
+            }
             dataitem(ReportTotalsLine; "Report Totals Buffer")
             {
                 DataItemTableView = SORTING("Line No.");
@@ -937,9 +1061,10 @@ report 50106 "EIN Standard Sales-Order Conf."
 
                 CalcFields("Work Description");
                 ShowWorkDescription := "Work Description".HasValue;
-
+                ///RRRRRRR
                 FormatAddr.GetCompanyAddr("Responsibility Center", RespCenter, CompanyInfo, CompanyAddr);
                 FormatAddr.SalesHeaderBillTo(CustAddr, Header);
+                FormatAddr.SalesHeaderSellTo(SellToAddr, Header);
                 ShowShippingAddr := FormatAddr.SalesHeaderShipTo(ShipToAddr, CustAddr, Header);
 
                 if not Cust.Get("Bill-to Customer No.") then
@@ -963,6 +1088,8 @@ report 50106 "EIN Standard Sales-Order Conf."
                     ArchiveManagement.StoreSalesDocument(Header, LogInteraction);
 
                 //EIN++
+                VRGBuffer.DeleteAll();
+                NextVRGEntryNo := 0;
                 FillLeftHeader();
                 FillRightHeader();
                 FillFooter();
@@ -1115,6 +1242,7 @@ report 50106 "EIN Standard Sales-Order Conf."
         AsmHeader: Record "Assembly Header";
         SellToContact: Record Contact;
         BillToContact: Record Contact;
+        ItemReference: Record "Item Reference";
         Language: codeunit Language;
         FormatAddr: codeunit "Format Address";
         FormatDocument: codeunit "Format Document";
@@ -1157,11 +1285,15 @@ report 50106 "EIN Standard Sales-Order Conf."
         WorkDescriptionInstream: InStream;
         CustAddr: array[8] of Text[100];
         ShipToAddr: array[8] of Text[100];
+        SellToAddr: array[8] of Text[100];
         CompanyAddr: array[8] of Text[100];
         SalesPersonText: Text[50];
         TotalText: Text[50];
         TotalExclVATText: Text[50];
         TotalInclVATText: Text[50];
+        EAN: Text[60];
+        EAN_Short: Text[60];
+        CustItemNo: Code[50];
         LineDiscountPctText: Text;
         FormattedVATPct: Text;
         FormattedUnitPrice: Text;
@@ -1172,6 +1304,7 @@ report 50106 "EIN Standard Sales-Order Conf."
         ShowShippingAddr: Boolean;
         ArchiveDocument: Boolean;
         LogInteraction: Boolean;
+        NoPrintFeeGLAccount: Boolean;
         TotalSubTotal: Decimal;
         TotalAmount: Decimal;
         TotalAmountInclVAT: Decimal;
@@ -1182,6 +1315,7 @@ report 50106 "EIN Standard Sales-Order Conf."
         [InDataSet]
         LogInteractionEnable: Boolean;
         DisplayAssemblyInformation: Boolean;
+        ShowVRGData: Boolean;
         AsmInfoExistsForLine: Boolean;
         CompanyLogoPosition: Integer;
         FirstLineHasBeenOutput: Boolean;
@@ -1193,6 +1327,9 @@ report 50106 "EIN Standard Sales-Order Conf."
         TotalVATBaseLCY: Decimal;
         TotalVATAmountLCY: Decimal;
         PrevLineAmount: Decimal;
+        FeeItemAmount: Decimal;
+        FeeItemLineAmount: Decimal;
+        NextVRGEntryNo: Integer;
         NoFilterSetErr: label 'You must specify one or more filters to avoid accidently printing all documents.';
         GreetingLbl: label 'Hello';
         ClosingLbl: label 'Sincerely';
@@ -1210,9 +1347,22 @@ report 50106 "EIN Standard Sales-Order Conf."
         SalespersonPurchaserLbl: label 'Seller';
         LineDiscountInPctLbl: label 'Line discount %';
         ItemNoLbl: label 'Item No.';
+        VRGSummaryLbl: label 'Fee Summary';
+        VRGItemNoLbl: label 'Fee Item No.';
+        VRGItemQuantityLbl: label 'Fee Quantity';
+        VRGItemAmountLbl: label 'Fee Amount';
+        VRGItemLineAmountLbl: label 'Fee Line Amount';
+        VRGTotalLbl: label 'Total %1';
         PmtDiscText: Text;
         ShowWorkDescription: Boolean;
         WorkDescriptionLine: Text;
+        FeeItemText: Text;
+        VRGTotalText: Text;
+        FeeItemLbl: label 'plus';
+        SupplierNnoLbl: label 'Supplier no.';
+        ReferenceTypeNoLbl: label 'Reference No.';
+        CustomItemNoLbl: label 'Cross-Reference No';
+        SellToLbl: label 'Sell to';
 
     local procedure InitLogInteraction()
     begin
@@ -1296,6 +1446,8 @@ report 50106 "EIN Standard Sales-Order Conf."
     end;
 
     local procedure FillRightHeader()
+    var
+        Customer: Record Customer;
     begin
         RightHeader.DeleteAll();
         FillNameValueTable(RightHeader, CompanyInfoPhoneNoLbl, CompanyInfo."Phone No.");
@@ -1307,12 +1459,16 @@ report 50106 "EIN Standard Sales-Order Conf."
         FillNameValueTable(RightHeader, ' ', ' ');
         FillNameValueTable(RightHeader, Format(Header."Document Date", 0, 4), ' ');
         FillNameValueTable(RightHeader, ' ', ' ');
-        FillNameValueTable(RightHeader, SalesHeaderShipmentDateLbl, Format(Header."Shipment Date", 0, '<Day>/<Month>/<YEAR>'));
+        FillNameValueTable(RightHeader, SalesHeaderShipmentDateLbl, Format(Header."Requested Delivery Date", 0, '<Day>/<Month>/<YEAR>'));
         FillNameValueTable(RightHeader, InvNoLbl, Header."No.");
         if Header."External Document No." = '' then
             FillNameValueTable(RightHeader, Header.FieldCaption("External Document No."), ' ')
         else
             FillNameValueTable(RightHeader, Header.FieldCaption("External Document No."), Header."External Document No.");
+
+        Customer.Reset();
+        if Customer.Get(Header."Sell-to Customer No.") then
+            FillNameValueTable(RightHeader, SupplierNnoLbl, Customer."Our Account No.");
 
         //FillNameValueTable(RightHeader, BilltoCustomerNoLbl, Header."Bill-to Customer No.");
         //FillNameValueTable(RightHeader, Header.FieldCaption("Document Date"), Format(Header."Document Date", 0, 4));
@@ -1320,9 +1476,50 @@ report 50106 "EIN Standard Sales-Order Conf."
     end;
 
     local procedure FillFooter()
+    var
+        ShiptoAddrText: Text;
+        SellToAddrText: Text;
+
     begin
         Footer.DeleteAll();
 
+        ShiptoAddrText := '';
+        ShiptoAddrText += ShipToAddr[1];
+        if ShipToAddr[2] <> '' then
+            ShiptoAddrText += ', ' + ShipToAddr[2];
+        if ShipToAddr[3] <> '' then
+            ShiptoAddrText += ', ' + ShipToAddr[3];
+        if ShipToAddr[4] <> '' then
+            ShiptoAddrText += ', ' + ShipToAddr[4];
+        if ShipToAddr[5] <> '' then
+            ShiptoAddrText += ', ' + ShipToAddr[5];
+        if ShipToAddr[6] <> '' then
+            ShiptoAddrText += ', ' + ShipToAddr[6];
+        if ShipToAddr[7] <> '' then
+            ShiptoAddrText += ', ' + ShipToAddr[7];
+        if ShipToAddr[8] <> '' then
+            ShiptoAddrText += ', ' + ShipToAddr[8];
+        if ShiptoAddrText <> '' then
+            FillNameValueTable(Footer, ShiptoAddrLbl, ShiptoAddrText);
+
+        SellToAddrText := '';
+        SellToAddrText += SellToAddr[1];
+        if SellToAddr[2] <> '' then
+            SellToAddrText += ', ' + SellToAddr[2];
+        if SellToAddr[3] <> '' then
+            SellToAddrText += ', ' + SellToAddr[3];
+        if SellToAddr[4] <> '' then
+            SellToAddrText += ', ' + SellToAddr[4];
+        if SellToAddr[5] <> '' then
+            SellToAddrText += ', ' + SellToAddr[5];
+        if SellToAddr[6] <> '' then
+            SellToAddrText += ', ' + SellToAddr[6];
+        if SellToAddr[7] <> '' then
+            SellToAddrText += ', ' + SellToAddr[7];
+        if SellToAddr[8] <> '' then
+            SellToAddrText += ', ' + SellToAddr[8];
+        if ShiptoAddrText <> '' then
+            FillNameValueTable(Footer, SellToLbl, SellToAddrText);
 
         //FillNameValueTable(Footer, BilltoCustomerNoLbl, Header."Bill-to Customer No.");
         //FillNameValueTable(Footer, Header.FieldCaption("Document Date"), Format(Header."Document Date", 0, 4));
@@ -1343,6 +1540,29 @@ report 50106 "EIN Standard Sales-Order Conf."
             NameValueBuffer.Name := CopyStr(Name, 1, MaxStrLen(NameValueBuffer.Name));
             NameValueBuffer.Value := CopyStr(Value, 1, MaxStrLen(NameValueBuffer.Value));
             NameValueBuffer.Insert();
+        end;
+    end;
+
+    procedure SetVRGBuffer(_ItemFeeGroupCode: Code[20]; _FeeItemQuantity: Decimal; _FeeItemAmount: Decimal; _FeeItemLineAmount: Decimal)
+    begin
+        ShowVRGData := true;
+
+        VRGBuffer.Reset();
+        VRGBuffer.SetRange("No.", _ItemFeeGroupCode);
+        if VRGBuffer.FindFirst() then begin
+            VRGBuffer."Qty. per Parent" += _FeeItemQuantity;
+            VRGBuffer."Unit Cost" += _FeeItemAmount;
+            VRGBuffer."Total Cost" += _FeeItemLineAmount;
+            VRGBuffer.Modify();
+        end else begin
+            NextVRGEntryNo += 1;
+            VRGBuffer.Init();
+            VRGBuffer."Entry No." := NextVRGEntryNo;
+            VRGBuffer."No." := _ItemFeeGroupCode;
+            VRGBuffer."Qty. per Parent" := _FeeItemQuantity;
+            VRGBuffer."Unit Cost" := _FeeItemAmount;
+            VRGBuffer."Total Cost" := _FeeItemLineAmount;
+            VRGBuffer.Insert();
         end;
     end;
 
