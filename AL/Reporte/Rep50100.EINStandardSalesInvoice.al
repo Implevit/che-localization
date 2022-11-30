@@ -2148,7 +2148,7 @@
 
     local procedure FillRightHeader()
     var
-        CompanyFooter: Record "Company Information";
+    //CompanyFooter: Record "Company Information";
     begin
         RightHeader.DeleteAll();
 

@@ -1363,7 +1363,6 @@
           <source>SELL TO:</source>
           <target>VENDRE À: </target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Suggested translation inserted.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales - Shipm501 - NamedType SellToLbl</note>
         </trans-unit>
         <trans-unit id="Report 3234294113 - NamedType 601422815" size-unit="char" translate="yes" xml:space="preserve">
@@ -2895,6 +2894,12 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales-Order Conf. - NamedType CopyLbl</note>
         </trans-unit>
+        <trans-unit id="Report 2053024908 - NamedType 4012885999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cross-Reference No</source>
+          <target>Référence externe</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales-Order Conf. - NamedType CustomItemNoLbl</note>
+        </trans-unit>
         <trans-unit id="Report 2053024908 - NamedType 1198791402" size-unit="char" translate="yes" xml:space="preserve">
           <source>Email</source>
           <target>E-mail</target>
@@ -2906,6 +2911,12 @@
           <target>Taux de change : %1/%2</target>
           <note from="Developer" annotates="general" priority="2">%1 and %2 are both amounts.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales-Order Conf. - NamedType ExchangeRateTxt</note>
+        </trans-unit>
+        <trans-unit id="Report 2053024908 - NamedType 1513010843" size-unit="char" translate="yes" xml:space="preserve">
+          <source>plus</source>
+          <target>Plus</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales-Order Conf. - NamedType FeeItemLbl</note>
         </trans-unit>
         <trans-unit id="Report 2053024908 - NamedType 514421613" size-unit="char" translate="yes" xml:space="preserve">
           <source>Hello</source>
@@ -2997,6 +3008,12 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales-Order Conf. - NamedType PostedShipmentDateLbl</note>
         </trans-unit>
+        <trans-unit id="Report 2053024908 - NamedType 946568340" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reference No.</source>
+          <target>N° référence</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales-Order Conf. - NamedType ReferenceTypeNoLbl</note>
+        </trans-unit>
         <trans-unit id="Report 2053024908 - NamedType 2449874975" size-unit="char" translate="yes" xml:space="preserve">
           <source>Order Confirmation</source>
           <target>Confirmation de commande</target>
@@ -3045,6 +3062,13 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales-Order Conf. - NamedType SellToContactPhoneNoLbl</note>
         </trans-unit>
+        <trans-unit id="Report 2053024908 - NamedType 3145748777" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sell to</source>
+          <target>Donneur d'ordre</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Suggested translation inserted.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales-Order Conf. - NamedType SellToLbl</note>
+        </trans-unit>
         <trans-unit id="Report 2053024908 - NamedType 2531235046" size-unit="char" translate="yes" xml:space="preserve">
           <source>Shipment</source>
           <target>Expédition</target>
@@ -3068,6 +3092,12 @@
           <target>Sous-total</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales-Order Conf. - NamedType SubtotalLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2053024908 - NamedType 344949819" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Supplier no.</source>
+          <target>N° de fournisseur</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales-Order Conf. - NamedType SupplierNnoLbl</note>
         </trans-unit>
         <trans-unit id="Report 2053024908 - NamedType 2410138484" size-unit="char" translate="yes" xml:space="preserve">
           <source>Total</source>
@@ -3123,6 +3153,42 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales-Order Conf. - NamedType VATPercentageLbl</note>
         </trans-unit>
+        <trans-unit id="Report 2053024908 - NamedType 2644339852" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fee Amount</source>
+          <target>Montant du VRG</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales-Order Conf. - NamedType VRGItemAmountLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2053024908 - NamedType 749191154" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fee Line Amount</source>
+          <target>Montant ligne du VRG</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales-Order Conf. - NamedType VRGItemLineAmountLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2053024908 - NamedType 3363098095" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fee Item No.</source>
+          <target>Numéro VRG</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales-Order Conf. - NamedType VRGItemNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2053024908 - NamedType 3070949401" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fee Quantity</source>
+          <target>VRG Quantité</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales-Order Conf. - NamedType VRGItemQuantityLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2053024908 - NamedType 1633687095" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fee Summary</source>
+          <target>VRG Résumé</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales-Order Conf. - NamedType VRGSummaryLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2053024908 - NamedType 112313237" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total %1</source>
+          <target>Total %1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales-Order Conf. - NamedType VRGTotalLbl</note>
+        </trans-unit>
         <trans-unit id="Report 2053024908 - ReportDataItem 907109761 - Property 1806354803" size-unit="char" translate="yes" xml:space="preserve">
           <source>Sales Order</source>
           <target>Commande vente</target>
@@ -3134,6 +3200,12 @@
           <target>%1%</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales-Order Conf. - ReportDataItem Line - Method OnAfterGetRecord - NamedType StrSubstNo_1Lbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2053024908 - ReportDataItem 1735507514 - Method 3245603402 - NamedType 2739152996" size-unit="char" translate="yes" xml:space="preserve">
+          <source>EAN: </source>
+          <target>EAN: </target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report EIN Standard Sales-Order Conf. - ReportDataItem Line - Method OnAfterGetRecord - NamedType EANLbl</note>
         </trans-unit>
         <trans-unit id="Report 2053024908 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Options</source>
