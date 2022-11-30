@@ -641,13 +641,12 @@ report 50106 "EIN Standard Sales-Order Conf."
                     if FirstLineHasBeenOutput then
                         Clear(DummyCompanyInfo.Picture);
                     FirstLineHasBeenOutput := true;
-                    ///RRRRRRRRRRRRRRRRRRRRRRR
+
                     NoPrintFeeGLAccount := false;
                     if Line.Type = Line.Type::"G/L Account" then
                         if EinhellCoreSetup.Get() then
                             if EinhellCoreSetup."Item Fee G/L Account" = Line."No." then
                                 NoPrintFeeGLAccount := true;
-
 
                     EAN := '';
                     EAN_short := '';
